@@ -7,7 +7,7 @@ export function login(data) {
     data
   })
 }
-// 登陆成功得到用户信息接口
+// 登陆成功得到 用户 信息 接口
 export function getInfo(token) {
   return request({
     url: '/vue-element-admin/user/info',
