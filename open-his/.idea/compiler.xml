@@ -6,24 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="doctor-mapper" />
         <module name="system-mapper" />
-        <module name="erp-mapper" />
+        <module name="erp-domain" />
         <module name="doctor-api" />
         <module name="his-commons" />
+        <module name="erp-mapper" />
+        <module name="doctor-mapper" />
         <module name="statistics-service" />
-        <module name="doctor-domain" />
-        <module name="system-service" />
         <module name="statistics-api" />
-        <module name="system-web" />
-        <module name="erp-service" />
         <module name="system-api" />
+        <module name="erp-api" />
         <module name="statistics-mapper" />
         <module name="system-domain" />
-        <module name="statistics-domain" />
         <module name="doctor-service" />
-        <module name="erp-api" />
-        <module name="erp-domain" />
+        <module name="statistics-domain" />
+        <module name="system-web" />
+        <module name="doctor-domain" />
+        <module name="system-service" />
+        <module name="erp-service" />
       </profile>
     </annotationProcessing>
   </component>
