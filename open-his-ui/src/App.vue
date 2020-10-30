@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  // 主入口
   name: 'App'
 }
 </script>
