@@ -4,7 +4,7 @@
 #### 项目架构：springboot、vue，shiro，fastfds，redis，阿里云
 
 #### 项目上线ip：http://8.129.120.248（阿里云）
-#### yapi接口管理地址：http://8.129.120.248:3000
+#### yapi接口管理地址：http://8.129.120.248:3000  （谷歌浏览器才能访问）
 
 ## 1.项目简介：
 
@@ -32,22 +32,39 @@ Open-His是以完整的基层医疗机构-信息化解决方案为出发点，
 组件			作用			参考网站
 
 Spring Framework	容器			http://projects.spring.io/spring-framework/
+
 Spring Boot		微服务框架		https://spring.io/projects/spring-boot/
+
 Shiro			安全框架		http://shiro.apache.org/
+
 MyBatis-Plus		ORM框架			https://mp.baomidou.com/
+
 MyBatis Generator	代码生成器插件		https://zhile.io/2019/04/23/mybatis-code-helper-pro-crack.html
+
 ZooKeeper		分布式协调服务		http://zookeeper.apache.org/
+
 dubbo-admin		服务治理项目		http://dubbo.apache.org/zh-cn/blog/dubbo-admin.html
+
 dubbo			远程调用框架		http://dubbo.apache.org/zh-cn/
+
 Druid			数据库连接池		https://github.com/alibaba/druid
+
 Redis			分布式缓存数据库	https://redis.io/
+
 ActiveMQ		消息队列		http://activemq.apache.org/
+
 FastDFS			分布式文件系统		https://github.com/happyfish100/fastdfs
+
 Log4J			日志组件		http://logging.apache.org/log4j/1.2/
+
 Swagger2		接口测试框架		http://swagger.io/
+
 Lombok			简化编码插件		https://projectlombok.org/
+
 Jackson			数据序列化		https://github.com/FasterXML/jackson
+
 Maven			项目构建管理		http://maven.apache.org/
+
 
 ## 4.前端技术：
 
