@@ -7,7 +7,8 @@ const state = {
   name: '',
   avatar: '',
   introduction: '',
-  roles: []
+  roles: [],
+  permissions: []
 }
 
 const mutations = {
@@ -25,19 +26,22 @@ const mutations = {
   },
   SET_ROLES: (state, roles) => {
     state.roles = roles
+  },
+  SET_PERMISSIONS: (state, permissions) => {
+    state.permissions = permissions
   }
 }
 
 const actions = {
-  //用户登录，从userinfo中取出用户名密码
+  // 用户登录，从userinfo中取出用户名密码
   login({ commit }, userInfo) {
     const { username, password } = userInfo
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password }).then(response => {
-        //调用后台api登录接口，返回token，设置token
-        const { data } = response
-        commit('SET_TOKEN', data.token)
-        setToken(data.token)
+        // 调用后台api登录接口，返回token，设置token
+        const { token } = response
+        commit('SET_TOKEN', token)
+        setToken(token)
         resolve()
       }).catch(error => {
         reject(error)
@@ -45,40 +49,35 @@ const actions = {
     })
   },
 
-  //获取用户信息
+  // 获取用户信息
   getInfo({ commit, state }) {
     return new Promise((resolve, reject) => {
       getInfo(state.token).then(response => {
-        const { data } = response
+        const { permissions, roles, picture, username } = response
 
-        if (!data) {
-          reject('Verification failed, please Login again.')
+        if (!username) {
+          reject('用户未登录，请先登录')
         }
 
-        const { roles, name, avatar, introduction } = data
+        commit('SET_ROLES', roles) // 角色
+        commit('SET_PERMISSIONS', permissions) // 头像
+        commit('SET_NAME', username) // 用户名
+        commit('SET_AVATAR', picture) // 头像
 
-        // roles must be a non-empty array
-        if (!roles || roles.length <= 0) {
-          reject('getInfo: roles must be a non-null array!')
-        }
-
-        commit('SET_ROLES', roles) //角色
-        commit('SET_NAME', name) //用户名
-        commit('SET_AVATAR', avatar) //头像
-        // commit('SET_INTRODUCTION', introduction)
-        resolve(data)
+        resolve(response)
       }).catch(error => {
         reject(error)
       })
     })
   },
 
-  //退出
+  // 退出
   logout({ commit, state, dispatch }) {
     return new Promise((resolve, reject) => {
       logout(state.token).then(() => {
         commit('SET_TOKEN', '')
         commit('SET_ROLES', [])
+        commit('SET_PERMISSIONS', [])
         removeToken()
         resetRouter()
 
@@ -98,6 +97,7 @@ const actions = {
     return new Promise(resolve => {
       commit('SET_TOKEN', '')
       commit('SET_ROLES', [])
+      commit('SET_PERMISSIONS', [])
       removeToken()
       resolve()
     })

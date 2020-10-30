@@ -24,11 +24,14 @@ spring:
         deny:
         url-pattern: /druid/*
         enabled: true  #启用数据源监控
+
   #配置redis
   redis:
     port: 6390
     host: 8.129.120.248
     password: 123456
+
+  #配置前传后后转前的日期格式
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
   jackson:
@@ -41,8 +44,7 @@ shiro:
     - /login/doLogin*
     - /login/captcha*
     - /login/logout*
-    #- /pay/callback*/**
-    #    - /system/upload/*
+    #druid开放
     - /druid/**
   authc-urls:
     - /**

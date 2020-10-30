@@ -129,7 +129,20 @@
             <artifactId>gson</artifactId>
             <version>${gson-version}</version>
         </dependency>
+        <!-- knife4j美化接口文档 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <!--在引用时请在maven中央仓库搜索最新版本号-->
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.6</version>
+        </dependency>
     </dependencies>
+
 
 
 </project>
