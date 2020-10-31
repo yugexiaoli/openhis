@@ -5,7 +5,6 @@ import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
 import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
-// 加载菜单和权限的js逻辑....
 
 NProgress.configure({ showSpinner: false }) // NProgress Configuration
 
@@ -14,40 +13,35 @@ const whiteList = ['/login', '/auth-redirect'] // no redirect whitelist
 router.beforeEach(async(to, from, next) => {
   // start progress bar
   NProgress.start()
-
-  // 设置标题
+  // 设置页面标题
   document.title = getPageTitle(to.meta.title)
-
-  // 获取token
+  // 从vuex里面得到用户登陆的token
   const hasToken = getToken()
-
   // 判断是否有token
   if (hasToken) {
     if (to.path === '/login') {
-      // 如果有token，并且已经登录过，直接去后台
+      // 如果已登陆了，步转到首页
       next({ path: '/' })
-      NProgress.done() // hack: https://github.com/PanJiaChen/vue-element-admin/pull/2939
+      NProgress.done()
     } else {
-      // determine whether the user has obtained his permission roles through getInfo
-      const hasRoles = store.getters.roles && store.getters.roles.length > 0
-      if (hasRoles) {
+      // 确定用户是否已通过getInfo获得其用户
+      const hasName = store.getters.name !== ''
+
+      if (hasName) {
         next()
       } else {
         try {
-          // 从store中user/getInfo获取用户角色
-          const { roles } = await store.dispatch('user/getInfo')
+          // 如果没有得到权限则再去请求后台得到用户信息及权限信息
+          await store.dispatch('user/getInfo')
+          // 绑定动态路由【后面我们要修改】
+          await store.dispatch('menu/getMenus').then(accessRoutes => {
+            // 添加动态路由到主路由
+            router.addRoutes(accessRoutes)
+          })
 
-          // 根据用户角色生成菜单路由
-          const accessRoutes = await store.dispatch('permission/generateRoutes', roles)
-
-          // 加载路由
-          router.addRoutes(accessRoutes)
-
-          // hack method to ensure that addRoutes is complete
-          // set the replace: true, so the navigation will not leave a history record
           next({ ...to, replace: true })
         } catch (error) {
-          // 如果有异常去到登录页面
+          // 如果出现异常，请求后台重置用户的token 并跳转到登陆页
           await store.dispatch('user/resetToken')
           Message.error(error || 'Has Error')
           next(`/login?redirect=${to.path}`)
@@ -56,13 +50,10 @@ router.beforeEach(async(to, from, next) => {
       }
     }
   } else {
-    /* 没token*/
-
+    // 如果没有token就跳转到登陆页
     if (whiteList.indexOf(to.path) !== -1) {
-      // 去登录页
       next()
     } else {
-      // 对其他页面没权限也去登录页
       next(`/login?redirect=${to.path}`)
       NProgress.done()
     }
@@ -70,6 +61,5 @@ router.beforeEach(async(to, from, next) => {
 })
 
 router.afterEach(() => {
-  // finish progress bar
   NProgress.done()
 })

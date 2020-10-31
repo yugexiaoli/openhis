@@ -6,7 +6,7 @@
     <el-row>
       <el-col :span="12">
         <h1 class="text-jumbo text-ginormous">
-          Oops!
+          没有权限!
         </h1>
         gif来源<a href="https://zh.airbnb.com/" target="_blank">airbnb</a> 页面
         <h2>你没有权限去该页面</h2>

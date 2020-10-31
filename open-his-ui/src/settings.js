@@ -1,5 +1,5 @@
 module.exports = {
-  title: '医疗管理系统',
+  title: '县医疗管理系统',
 
   /**
    * @type {boolean} true | false
