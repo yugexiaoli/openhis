@@ -2,6 +2,8 @@ package com.twofish.Exception;
 
 import com.twofish.vo.AjaxResult;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.validation.BindException;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -21,24 +23,42 @@ import java.util.Map;
 @Log4j2
 public class GlobleExceptionHadler {
 
-    private ObjectError allError;
+    //private ObjectError allError;
 
-    //登录参数校验异常
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    public AjaxResult methodargsexception(MethodArgumentNotValidException e){
+    //未指定异常
+    @ExceptionHandler(Exception.class)
+    public AjaxResult exception(Exception e){
+        return AjaxResult.error(e.getMessage());
+    }
 
+
+    //异常信息转化方法，用于将异常信息封装地更美观
+    public List errMsgExchange(List<ObjectError> allErrors ){
         List<Map<String,Object>> list=new ArrayList<>();
-        List<ObjectError> allErrors = e.getBindingResult().getAllErrors();
-
         for (ObjectError allError : allErrors) {
             Map<String,Object> map=new HashMap<>();
-
             map.put("DefaultMessage",allError.getDefaultMessage());
             map.put("ObjectName",allError.getObjectName());
             FieldError fieldError=(FieldError)allError;
             map.put("Field", fieldError.getField());
             list.add(map);
         }
-        return  AjaxResult.fail("登录失败，参数异常",list);
+        return list;
     }
+
+    //登录参数校验异常
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public AjaxResult methodargsexception(MethodArgumentNotValidException e){
+        return  AjaxResult.fail("登录失败，参数异常",errMsgExchange(e.getBindingResult().getAllErrors()));
+    }
+
+
+    //字典类型参数异常处理 异常信息转化
+    @ExceptionHandler(BindException.class)
+    public AjaxResult exception(BindException e){
+        return AjaxResult.fail("字典类型参数异常,操作失败",errMsgExchange(e.getBindingResult().getAllErrors()));
+    }
+
+
+
 }

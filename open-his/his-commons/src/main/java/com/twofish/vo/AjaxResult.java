@@ -6,6 +6,9 @@ import java.util.HashMap;
 
 /**
  * 统一返回结果
+ * success:200
+ * fail:400
+ * error:500
  * @author ccy
  */
 public class AjaxResult extends HashMap<String,Object> {
