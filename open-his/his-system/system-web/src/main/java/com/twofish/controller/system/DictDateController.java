@@ -96,13 +96,29 @@ public class DictDateController {
 
 
     /**
-     * 根据类型查询所有字典数据数据
+     * 根据类型查询所有字典数据数据(去数据库里查)
      * @return
      */
     @GetMapping("getDataByType/{dictType}")
     @ApiOperation(value = "根据类型查询所有字典数据数据",notes = "根据类型查询所有字典数据数据")
     public AjaxResult selectAllDictData(@PathVariable @Validated @NotNull(message = "字典类型不能为空") String dictType){
         return AjaxResult.success(dictDataService.querybydicttype(dictType));
+    }
+
+
+    /**
+     * 根据字典类型去redis中取字典数据（去redis查）
+     * @return
+     */
+    @GetMapping("selectDicDataBydictType/{dictType}")
+    @ApiOperation(value = "根据字典类型去redis中取字典数据",notes = "根据字典类型去redis中取字典数据")
+    public AjaxResult selectDicDataBydictType(@PathVariable @Validated @NotNull(message = "字典类型不能为空") String dictType){
+        try {
+            return AjaxResult.success("获取成功",this.dictDataService.selectDicDataBydictType(dictType));
+        }catch (Exception e){
+            log.error("从redis取字典缓存失败"+e.getMessage());
+            return AjaxResult.error();
+        }
     }
 
 

@@ -54,8 +54,7 @@ const actions = {
         routerArr.push(...lastRoute)
 
         commit('SET_ROUTES', routerArr)
-
-        resolve(pushRouter)
+        resolve(routerArr)
       }).catch(error => {
         reject(error)
       })

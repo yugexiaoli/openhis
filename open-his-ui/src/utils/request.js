@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { MessageBox, Message } from 'element-ui'
+import { MessageBox, Message, Notification } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 
@@ -45,6 +45,11 @@ service.interceptors.response.use(
       })
       return Promise.reject('error')// 记录错
     } else if (res.code !== 200) { // 可能是其它参数出错
+      Notification.error({
+        title: res.msg
+      })
+      return Promise.reject('error')// 记录错
+    } else if (res.code === 400) {
       Notification.error({
         title: res.msg
       })

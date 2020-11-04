@@ -1,12 +1,17 @@
 package com.twofish.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twofish.constants.Constants;
 import com.twofish.dto.DicDataDto;
 import com.twofish.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Arrays;
@@ -16,10 +21,15 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.twofish.domain.DictData;
 import com.twofish.mapper.DictDataMapper;
 import com.twofish.service.DictDataService;
+import springfox.documentation.spring.web.json.Json;
+
 @Service
 public class DictDataServiceImpl implements DictDataService{
     @Resource
     private DictDataMapper dataMapper;
+
+    @Autowired
+    private StringRedisTemplate stringRedisTemplate;
 
     @Override
     public DataGridView listpage(DicDataDto dicDataDto) {
@@ -73,4 +83,14 @@ public class DictDataServiceImpl implements DictDataService{
         qw.orderByAsc(DictData.COL_DICT_SORT);
         return dataMapper.selectList(qw);
     }
+
+    @Override
+    public List<DictData> selectDicDataBydictType(String dictType) {
+        String key=Constants.DICT_REDIS_PROFIX+dictType;
+        String json = stringRedisTemplate.opsForValue().get(key);
+        List<DictData> list = JSON.parseArray(json, DictData.class);
+        return list;
+    }
+
+
 }

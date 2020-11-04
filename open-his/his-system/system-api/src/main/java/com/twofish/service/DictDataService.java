@@ -54,4 +54,10 @@ public interface DictDataService {
      */
     List<DictData> querybydicttype(String dictType);
 
+    /**
+     * 从redis取字典缓存
+     * @param dictType
+     * @return
+     */
+    List<DictData> selectDicDataBydictType(String dictType);
 }

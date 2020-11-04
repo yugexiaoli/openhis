@@ -61,6 +61,8 @@ public interface DictTypeService {
     Boolean checkdictypeuniq(Long dictId,String dictType);
 
 
-
-
+    /**
+     * 字典缓存同步
+     */
+    void dictCacheAsync();
 }

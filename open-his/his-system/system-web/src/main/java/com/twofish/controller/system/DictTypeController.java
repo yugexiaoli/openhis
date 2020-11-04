@@ -123,6 +123,21 @@ public class DictTypeController {
     }
 
 
+    /**
+     * 字典数据缓存同步到redis
+     * @return
+     */
+    @GetMapping("dictCacheAsync")
+    @ApiOperation(value = "字典数据缓存同步到redis",notes = "字典数据缓存同步到redis")
+    public AjaxResult dictCacheAsync(){
+        try {
+            this.dictTypeService.dictCacheAsync();
+            return AjaxResult.success();
+        }catch (Exception e){
+            log.error("缓存同步失败"+e.getMessage());
+            return AjaxResult.error();
+        }
+    }
 
 
 

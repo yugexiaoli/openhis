@@ -1,18 +1,20 @@
 package com.twofish.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twofish.constants.Constants;
-import com.twofish.domain.SimpleUser;
+import com.twofish.domain.DictData;
 import com.twofish.dto.DicTypeDto;
+import com.twofish.mapper.DictDataMapper;
 import com.twofish.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.*;
-
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.twofish.mapper.DictTypeMapper;
 import com.twofish.domain.DictType;
 import com.twofish.service.DictTypeService;
@@ -21,6 +23,11 @@ import com.twofish.service.DictTypeService;
 public class DictTypeServiceImpl implements DictTypeService{
     @Resource
     private DictTypeMapper dictTypeMapper;
+    @Resource
+    private DictDataMapper dictDataMapper;
+
+    @Autowired
+    private StringRedisTemplate redisTemplate;
 
 
     @Override
@@ -88,5 +95,28 @@ public class DictTypeServiceImpl implements DictTypeService{
             return false;
         }
         return true;
+    }
+
+    /**
+     * 缓存同步字典数据
+     * 先查出所有可用的字典类型
+     * 再根据字典类型查出所有可用的字典数据
+     * 再转成json格式存到redis里
+     * 格式：dict:类型 , [{},{},{}]
+     */
+    @Override
+    public void dictCacheAsync() {
+        QueryWrapper<DictType> qw = new QueryWrapper<>();
+        qw.eq(DictType.COL_STATUS,Constants.STATUS_TRUE);
+        List<DictType> dictTypes = this.dictTypeMapper.selectList(qw);
+        for (DictType dictType : dictTypes) {
+            QueryWrapper<DictData> qwd = new QueryWrapper<>();
+            qwd.eq(DictData.COL_DICT_TYPE,dictType.getDictType());
+            qwd.eq(DictData.COL_STATUS,Constants.STATUS_TRUE);
+            qwd.orderByAsc(DictData.COL_DICT_SORT);
+            List<DictData> dictData = this.dictDataMapper.selectList(qwd);
+            redisTemplate.opsForValue().set(Constants.DICT_REDIS_PROFIX+dictType.getDictType(), JSON.toJSONString(dictData));
+        }
+
     }
 }
