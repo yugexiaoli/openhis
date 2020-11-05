@@ -19,6 +19,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         log.info("start insert fill ....");
         this.fillStrategy(metaObject, "createTime", new Date());
+        this.fillStrategy(metaObject, "loginTime", new Date());
     }
 
     @Override

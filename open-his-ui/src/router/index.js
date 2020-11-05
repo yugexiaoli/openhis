@@ -122,7 +122,7 @@ export const asyncRoutes = [
       },
       {
         path: 'log_login',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/system/log/loginlog'),
         name: '/system/log_login',
         meta: {
           title: '登陆日志管理',

@@ -1,7 +1,16 @@
 package com.twofish.controller.system;
 
+import cn.hutool.core.date.DateUtil;
 import com.twofish.aspectj.annotation.Log;
 import com.twofish.aspectj.enums.BusinessType;
+import com.twofish.domain.LoginInfo;
+import com.twofish.domain.User;
+import com.twofish.service.LoginInfoService;
+import com.twofish.service.UserService;
+import com.twofish.utils.AddressUtils;
+import com.twofish.utils.IpUtils;
+import com.twofish.utils.ServletUtils;
+import com.twofish.utils.ShiroSecurityUtils;
 import com.twofish.vo.ActivierUser;
 import com.twofish.constants.Constants;
 import com.twofish.constants.HttpStatus;
@@ -11,6 +20,7 @@ import com.twofish.service.MenuService;
 import com.twofish.vo.AjaxResult;
 import com.twofish.vo.LoginBodyDto;
 import com.twofish.vo.MenuTreeVo;
+import eu.bitwalker.useragentutils.UserAgent;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
@@ -24,6 +34,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +50,10 @@ import java.util.List;
 @Api(value = "系统登录接口",tags = "登录接口")
 public class LoginController {
 
-    @Autowired
+    @Resource
     private MenuService menuService;
+    @Resource
+    private LoginInfoService loginInfoService;
 
     /**
      * 登录方法
@@ -48,20 +62,55 @@ public class LoginController {
      */
     @PostMapping("login/doLogin")
     @ApiOperation(value = "登录方法",notes = "登录")
-    public AjaxResult login(@RequestBody @Validated LoginBodyDto loginBodyDto){
+    public AjaxResult login(@RequestBody @Validated LoginBodyDto loginBodyDto,HttpServletRequest request){
         Subject subject = SecurityUtils.getSubject();
         AjaxResult ajax = AjaxResult.success();
         UsernamePasswordToken token = new UsernamePasswordToken(loginBodyDto.getUsername(),loginBodyDto.getPassword());
+        LoginInfo loginInfo = this.createLoginInfo(request);
+        loginInfo.setLoginAccount(loginBodyDto.getUsername());
         try {
             subject.login(token);
             Serializable webtoken = subject.getSession().getId();
             ajax.put(Constants.TOKEN,webtoken);
+            //登录日志
+            loginInfo.setUserName(ShiroSecurityUtils.getCurrentUserName());
+            loginInfo.setLoginStatus(Constants.LOGIN_SUCCESS);
+            loginInfo.setMsg("登陆成功");
         }catch (Exception e){
             log.error("登录错误信息："+e.getMessage());
             ajax=AjaxResult.error(HttpStatus.ERROR,"用户名或密码错误");
+            loginInfo.setLoginStatus(Constants.LOGIN_ERROR);
+            loginInfo.setMsg("登陆失败，用户名或密码错误");
         }
+        this.loginInfoService.insertLoginIno(loginInfo);
         return ajax;
     }
+
+
+    /**
+     * 得到用户的登陆信息
+     * @param request
+     * @return
+     */
+    private LoginInfo createLoginInfo(HttpServletRequest request) {
+        LoginInfo loginInfo=new LoginInfo();
+        final UserAgent userAgent = UserAgent.parseUserAgentString(request.getHeader("User-Agent"));
+        final String ip = IpUtils.getIpAddr(request);
+        String address = AddressUtils.getRealAddressByIP(ip);
+        loginInfo.setIpAddr(ip);
+        loginInfo.setLoginLocation(address);
+        // 获取客户端操作系统
+        String os = userAgent.getOperatingSystem().getName();
+        // 获取客户端浏览器
+        String browser = userAgent.getBrowser().getName();
+        loginInfo.setOs(os);
+        loginInfo.setBrowser(browser);
+        loginInfo.setLoginTime(DateUtil.date());
+        loginInfo.setLoginType(Constants.LOGIN_TYPE_SYSTEM);
+        return loginInfo;
+    }
+
+
 
     /**
      * 登录后获取用户信息
@@ -85,7 +134,6 @@ public class LoginController {
      * 用户退出接口
      * @return
      */
-    @Log(title = "用户退出",businessType = BusinessType.FORCE)
     @GetMapping("login/logout")
     @ApiOperation(value = "用户退出",notes = "用户退出")
     public AjaxResult logout(){

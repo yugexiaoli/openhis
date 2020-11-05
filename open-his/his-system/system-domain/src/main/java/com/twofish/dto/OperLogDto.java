@@ -48,7 +48,6 @@ public class OperLogDto extends BaseDto {
     /**
      * 操作状态（0正常 1异常）
      */
-    @NotNull(message = "操作状态不能为空")
     @ApiModelProperty(value="操作状态（0正常 1异常）")
     private String status;
 

@@ -1,9 +1,6 @@
 package com.twofish.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
@@ -95,7 +92,7 @@ public class LoginInfo extends BaseEntity {
     /**
      * 访问时间
      */
-    @TableField(value = "login_time")
+    @TableField(value = "login_time",fill = FieldFill.INSERT)
     @ApiModelProperty(value="访问时间")
     private Date loginTime;
 
