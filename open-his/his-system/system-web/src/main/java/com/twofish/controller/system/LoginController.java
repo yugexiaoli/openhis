@@ -1,5 +1,7 @@
 package com.twofish.controller.system;
 
+import com.twofish.aspectj.annotation.Log;
+import com.twofish.aspectj.enums.BusinessType;
 import com.twofish.vo.ActivierUser;
 import com.twofish.constants.Constants;
 import com.twofish.constants.HttpStatus;
@@ -83,6 +85,7 @@ public class LoginController {
      * 用户退出接口
      * @return
      */
+    @Log(title = "用户退出",businessType = BusinessType.FORCE)
     @GetMapping("login/logout")
     @ApiOperation(value = "用户退出",notes = "用户退出")
     public AjaxResult logout(){

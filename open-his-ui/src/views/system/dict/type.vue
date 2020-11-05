@@ -1,5 +1,6 @@
 <template>
-  <div class="app_container">
+  <div class="app-container">
+    <!-- 搜索条件开始 -->
     <el-form ref="MysearchForm" :inline="true" :model="searchForm" class="search-form-inline">
       <el-form-item label="字典名称" prop="dictName">
         <el-input v-model="searchForm.dictName" size="small" placeholder="请输入字典名称" />
@@ -36,6 +37,7 @@
       </el-form-item>
     </el-form>
     <!-- 搜索条件结束 -->
+    <!-- 工具栏开始 -->
     <el-row :gutter="10" style="margin-bottom: 8px;">
       <el-col :span="1.5">
         <el-button type="primary" size="mini" icon="el-icon-plus" @click="handleAdd">新增</el-button>
@@ -51,6 +53,7 @@
       </el-col>
     </el-row>
     <!-- 工具栏结束 -->
+    <!-- 表格开始 -->
     <el-table
       ref="multipleTable"
       v-loading="loading"
@@ -61,61 +64,20 @@
       style="width: 98%"
       @selection-change="handleSelectionChange"
     >
-      <el-table-column
-        type="selection"
-        width="55"
-        align="center"
-      />
-      <el-table-column
-        prop="dictId"
-        label="字典编号"
-        width="200"
-        align="center"
-      />
-      <el-table-column
-        prop="dictName"
-        label="字典名称"
-        width="200"
-        align="center"
-      />
-      <el-table-column
-        prop="dictType"
-        label="字典类型"
-        align="center"
-        width="200"
-      >
+      <el-table-column type="selection" width="55" align="center" />
+      <el-table-column prop="dictId" label="字典编号" width="200" align="center" />
+      <el-table-column prop="dictName" label="字典名称" width="200" align="center" />
+      <el-table-column prop="dictType" label="字典类型" align="center" width="200">
         <template slot-scope="scope">
           <router-link :to="'/dict/data/' + scope.row.dictId" class="link-type">
             <span>{{ scope.row.dictType }}</span>
           </router-link>
         </template>
-
       </el-table-column>
-      <el-table-column
-        prop="status"
-        label="状态"
-        width="200"
-        align="center"
-        :formatter="statusFormatter"
-      />
-      <el-table-column
-        prop="remark"
-        label="备注"
-        width="200"
-        align="center"
-      />
-      <el-table-column
-        prop="createTime"
-        label="创建时间"
-        width="auto"
-        align="center"
-      />
-      <el-table-column
-        fixed="right"
-        label="操作"
-        width="200px"
-        align="center"
-      >
+      <el-table-column prop="status" label="状态" width="200" align="center" :formatter="statusFormatter" />
+      <el-table-column prop="remark" label="备注" width="200" align="center" />
+      <el-table-column prop="createTime" label="创建时间" width="auto" align="center" />
+      <el-table-column fixed="right" label="操作" width="200px" align="center">
         <template slot-scope="scope">
           <el-button icon="el-icon-edit" type="text" size="small" @click="handleUpdate(scope.row)">修改</el-button>
           <el-button icon="el-icon-delete" type="text" size="small" @click="handleDelete(scope.row)">删除</el-button>
@@ -123,6 +85,7 @@
       </el-table-column>
     </el-table>
     <!-- 表格结束 -->
+    <!-- 分页开始 -->
     <div class="block">
       <el-pagination
         v-show="datatatal>0"
@@ -136,6 +99,7 @@
       />
     </div>
     <!-- 分页结束 -->
+    <!-- 添加修改弹出层开始 -->
     <el-dialog
       :title="title"
       :visible.sync="open"
@@ -372,10 +336,6 @@ export default {
 </script>
 
 <style>
-.app_container{
-  margin-top: 20px;
-  margin-left: 10px;
-}
 .el-date-editor.el-input, .el-date-editor.el-input__inner {
     width: 220px;
 }

@@ -1,5 +1,7 @@
 package com.twofish.controller.system;
 
+import com.twofish.aspectj.annotation.Log;
+import com.twofish.aspectj.enums.BusinessType;
 import com.twofish.constants.Constants;
 import com.twofish.constants.HttpStatus;
 import com.twofish.domain.DictType;
@@ -56,6 +58,7 @@ public class DictTypeController {
      * @param dicTypeDto
      * @return
      */
+    @Log(title = "添加字典类型",businessType = BusinessType.INSERT)
     @PostMapping("addDictType")
     @ApiOperation(value = "添加字典类型",notes = "添加字典类型")
     public AjaxResult addDictType(@Validated DicTypeDto dicTypeDto){
@@ -86,6 +89,7 @@ public class DictTypeController {
      * @param dicTypeDto
      * @return
      */
+    @Log(title = "更新字典类型",businessType = BusinessType.UPDATE)
     @PutMapping("updateDictType")
     @ApiOperation(value = "更新字典类型数据",notes = "更新字典类型数据")
     public AjaxResult getOne(@Validated DicTypeDto dicTypeDto){
@@ -105,6 +109,7 @@ public class DictTypeController {
      * @param dictIds 字典类型id数组
      * @return
      */
+    @Log(title = "删除字典类型",businessType = BusinessType.DELETE)
     @DeleteMapping("deleteDictTypeByIds/{dictIds}")
     @ApiOperation(value = "根据id删除字典类型",notes = "根据id删除字典类型")
     public AjaxResult deleteDictTypeByIds(@PathVariable Long[] dictIds){
@@ -127,6 +132,7 @@ public class DictTypeController {
      * 字典数据缓存同步到redis
      * @return
      */
+    @Log(title = "字典数据缓存同步到redis",businessType = BusinessType.OTHER)
     @GetMapping("dictCacheAsync")
     @ApiOperation(value = "字典数据缓存同步到redis",notes = "字典数据缓存同步到redis")
     public AjaxResult dictCacheAsync(){

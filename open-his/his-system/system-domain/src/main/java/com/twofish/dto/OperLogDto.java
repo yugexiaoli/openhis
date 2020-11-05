@@ -19,7 +19,7 @@ import java.util.Date;
  * 操作日志传输对象
  * @author ccy
  */
-@ApiModel(value="com-twofish-domain-OperLogDto")
+@ApiModel(value="com-twofish-dto-OperLogDto")
 @Data
 @EqualsAndHashCode(callSuper=false)
 @AllArgsConstructor

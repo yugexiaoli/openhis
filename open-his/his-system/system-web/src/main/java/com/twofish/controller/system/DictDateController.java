@@ -1,5 +1,7 @@
 package com.twofish.controller.system;
 
+import com.twofish.aspectj.annotation.Log;
+import com.twofish.aspectj.enums.BusinessType;
 import com.twofish.domain.DictData;
 import com.twofish.dto.DicDataDto;
 import com.twofish.service.DictDataService;
@@ -49,6 +51,7 @@ public class DictDateController {
      * @param dicDataDto
      * @return
      */
+    @Log(title = "添加字典数据",businessType = BusinessType.INSERT)
     @PostMapping("addDictData")
     @ApiOperation(value = "添加字典数据",notes = "添加字典数据")
     public AjaxResult addDictData(@Validated DicDataDto dicDataDto){
@@ -74,6 +77,7 @@ public class DictDateController {
      * @param dicDataDto
      * @return
      */
+    @Log(title = "更新字典数据",businessType = BusinessType.UPDATE)
     @PutMapping("updateDictData")
     @ApiOperation(value = "更新字典数据数据",notes = "更新字典数据")
     public AjaxResult getOne(@Validated DicDataDto dicDataDto){
@@ -88,6 +92,7 @@ public class DictDateController {
      * @param dictCodeIds 字典数据id数组
      * @return
      */
+    @Log(title = "删除字典数据",businessType = BusinessType.DELETE)
     @DeleteMapping("deleteDictDataByIds/{dictCodeIds}")
     @ApiOperation(value = "根据id删除字典数据",notes = "根据id删除字典数据")
     public AjaxResult deleteDictDataByIds(@PathVariable @Validated @NotEmpty(message = "字典id不能为空") Long[] dictCodeIds){

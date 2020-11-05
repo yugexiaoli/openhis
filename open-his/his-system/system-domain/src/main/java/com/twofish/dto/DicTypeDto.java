@@ -15,7 +15,7 @@ import java.util.Date;
  * 字典类型传输对象
  * @author ccy
  */
-@ApiModel(value="com-twofish-domain-DictTypeDto")
+@ApiModel(value="com-twofish-dto-DictTypeDto")
 @Data
 @EqualsAndHashCode(callSuper=false)
 @AllArgsConstructor

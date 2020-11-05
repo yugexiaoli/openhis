@@ -51,7 +51,7 @@ public class OperLogController {
      */
     @Log(title = "根据id删除操作日志信息",businessType = BusinessType.DELETE)
     @ApiOperation(value = "根据id删除操作日志信息",notes = "根据id删除操作日志信息")
-    @GetMapping("deleteOperLogByIds/{infoIds}")
+    @DeleteMapping("deleteOperLogByIds/{infoIds}")
     public AjaxResult deleteOperLogByIds(@PathVariable Long[] infoIds){
         return AjaxResult.toAjax(this.operLogService.deleteOperLogByIds(infoIds));
     }
@@ -60,9 +60,9 @@ public class OperLogController {
      * 清空所有操作日志
      * @return
      */
-    @Log(title = "清空所有操作日志",businessType = BusinessType.CLEAN)
+    @Log(title = "清空所有操作日志",businessType = BusinessType.OTHER)
     @ApiOperation(value = "清空所有操作日志",notes = "清空所有操作日志")
-    @GetMapping("clearAllOperLog")
+    @DeleteMapping("clearAllOperLog")
     public AjaxResult clearAllOperLog(){
         return AjaxResult.toAjax(this.operLogService.clearAllOperLog());
     }

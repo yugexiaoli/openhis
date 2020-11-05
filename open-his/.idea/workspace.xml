@@ -14,38 +14,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4cedbdc-7988-4eb5-be06-3652a390af02" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/OperLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/OperLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/OperLogDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/OperLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/OperLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/OperLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/OperLogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/enums/BusinessStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/enums/BusinessType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/enums/OperatorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/OperLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/utils/ServletUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/LoginInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/LoginInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/LoginInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/LoginInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/LoginInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/LoginInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/store/modules/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/store/modules/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/utils/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/constants/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/constants/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/DictDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/DictDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/DictTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/DictTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/DictDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/DictDataService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/DictTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/DictTypeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/DictDataServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/DictDataServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/DictTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/DictTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/DictDataServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/DictDataServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/DictTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/DictTypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/dict/type.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/dict/type.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/OperLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectJ/OperLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/annotation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/aspectj/annotation/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/enums/BusinessStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/aspectj/enums/BusinessStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/enums/BusinessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/aspectj/enums/BusinessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/aspectj/enums/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/aspectj/enums/OperatorType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/DictDateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/DictDateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/DictTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/DictTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/OperLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/OperLogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/DictDateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/DictDateController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/DictTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/DictTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/LoginController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +203,7 @@
       <workItem from="1604304402407" duration="9833000" />
       <workItem from="1604340522103" duration="3307000" />
       <workItem from="1604415110342" duration="7794000" />
+      <workItem from="1604487114043" duration="11219000" />
     </task>
     <task id="LOCAL-00001" summary="server second commit&#10;ccy&#10;2020/0/31">
       <created>1604078368190</created>
@@ -307,10 +296,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="900" y="324" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603834644673" />
-    <state x="907" y="555" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604169655062">
+    <state x="907" y="555" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604524205497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="907" y="555" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604169655062" />
+    <state x="907" y="555" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604524205497" />
+    <state x="1295" y="382" key="#xdebugger.evaluate" timestamp="1604536089734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1295" y="382" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1604536089734" />
     <state x="490" y="98" width="1164" height="942" key="CommitChangelistDialog2" timestamp="1604178983853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,62 +316,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1047" y="402" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604302964963" />
-    <state width="1356" height="221" key="GridCell.Tab.0.bottom" timestamp="1604357673210">
+    <state width="1392" height="330" key="GridCell.Tab.0.bottom" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673210" />
-    <state width="1356" height="221" key="GridCell.Tab.0.center" timestamp="1604357673209">
+    <state width="1392" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.0.center" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673209" />
-    <state width="1356" height="221" key="GridCell.Tab.0.left" timestamp="1604357673209">
+    <state width="1392" height="330" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.0.left" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673209" />
-    <state width="1356" height="221" key="GridCell.Tab.0.right" timestamp="1604357673209">
+    <state width="1392" height="330" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.0.right" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673209" />
-    <state width="1356" height="221" key="GridCell.Tab.1.bottom" timestamp="1604357673210">
+    <state width="1392" height="330" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.1.bottom" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673210" />
-    <state width="1356" height="221" key="GridCell.Tab.1.center" timestamp="1604357673210">
+    <state width="1392" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.1.center" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673210" />
-    <state width="1356" height="221" key="GridCell.Tab.1.left" timestamp="1604357673210">
+    <state width="1392" height="330" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.1.left" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673210" />
-    <state width="1356" height="221" key="GridCell.Tab.1.right" timestamp="1604357673210">
+    <state width="1392" height="330" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="330" key="GridCell.Tab.1.right" timestamp="1604537892193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1356" height="221" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604357673210" />
-    <state width="1531" height="204" key="GridCell.Tab.2.bottom" timestamp="1604322521031">
+    <state width="1392" height="330" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604537892193" />
+    <state width="1392" height="307" key="GridCell.Tab.2.bottom" timestamp="1604536906301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1531" height="204" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604322521031" />
-    <state width="1531" height="204" key="GridCell.Tab.2.center" timestamp="1604322521031">
+    <state width="1392" height="307" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604536906301" />
+    <state width="1392" height="307" key="GridCell.Tab.2.center" timestamp="1604536906301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1531" height="204" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604322521031" />
-    <state width="1531" height="204" key="GridCell.Tab.2.left" timestamp="1604322521031">
+    <state width="1392" height="307" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604536906301" />
+    <state width="1392" height="307" key="GridCell.Tab.2.left" timestamp="1604536906301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1531" height="204" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604322521031" />
-    <state width="1531" height="204" key="GridCell.Tab.2.right" timestamp="1604322521031">
+    <state width="1392" height="307" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604536906301" />
+    <state width="1392" height="307" key="GridCell.Tab.2.right" timestamp="1604536906301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1531" height="204" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604322521031" />
+    <state width="1392" height="307" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604536906301" />
     <state x="747" y="328" key="SettingsEditor" timestamp="1603835284782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="747" y="328" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603835284782" />
-    <state width="807" height="517" key="XDebugger.FullValuePopup" timestamp="1604322076608">
+    <state width="807" height="517" key="XDebugger.FullValuePopup" timestamp="1604534805891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="807" height="517" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1604322076608" />
+    <state width="807" height="517" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1604534805891" />
     <state x="896" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604154896165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -391,10 +384,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1038" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603911358276" />
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604310581750">
+    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604536584867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604310581750" />
+    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604536584867" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

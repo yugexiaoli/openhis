@@ -131,7 +131,7 @@ export const asyncRoutes = [
       },
       {
         path: 'log_opt',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/system/log/operlog'),
         name: '/system/log_opt',
         meta: {
           title: '操作日志管理',
