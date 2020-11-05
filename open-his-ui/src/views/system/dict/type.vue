@@ -142,6 +142,9 @@ import { listForPage, addDictType, typegetOne, updateDictType, deleteDictTypeByI
 export default {
   data() {
     return {
+
+      // 是否启用遮盖层
+      loading: false,
       // 表格数据
       tableData: [],
       // 选中数组
@@ -180,10 +183,7 @@ export default {
       // 开始日期-结束日期
       beginAndEndTime: [],
       // 数据总条数
-      datatatal: 100,
-
-      // 是否启用遮盖层
-      loading: false
+      datatatal: 100
 
     }
   },
@@ -206,8 +206,8 @@ export default {
           this.tableData = data
           this.datatatal = total
         }
+        this.loading = false
       })
-      this.loading = false
     },
     // 查询
     dosearch() {
@@ -319,8 +319,8 @@ export default {
         } else {
           this.$message.success('缓存失败')
         }
+        this.loading = false
       })
-      this.loading = false
     },
     // 分页时间
     handleSizeChange(val) {
