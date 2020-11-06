@@ -15,6 +15,9 @@ export default {
     return {
       currentRole: 'adminDashboard'
     }
+  },
+  mounted() {
+
   }
 
 }

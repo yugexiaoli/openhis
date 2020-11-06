@@ -1,0 +1,111 @@
+package com.twofish.dto;
+
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.twofish.vo.BaseDto;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotNull;
+import java.util.Date;
+
+/**
+ * 科室传输对象
+ * @author ccy
+ */
+@ApiModel(value="com-twofish-dto-DeptDto")
+@Data
+@EqualsAndHashCode(callSuper=false)
+@AllArgsConstructor
+@NoArgsConstructor
+public class DeptDto extends BaseDto {
+    /**
+     * 部门科室id
+     */
+    @ApiModelProperty(value="部门科室id")
+    private Long deptId;
+
+    /**
+     * 部门名称
+     */
+    @NotNull(message = "科室名称不能为空")
+    @ApiModelProperty(value="部门名称")
+    private String deptName;
+
+    /**
+     * 挂号编好号(挂号人数，需要在新增挂号接口上修改科室的这个属性值+1)
+     */
+    @ApiModelProperty(value="挂号编号")
+    private Integer regNumber;
+
+    /**
+     * 科室编号
+     */
+    @NotNull(message = "科室编号不能为空")
+    @ApiModelProperty(value="科室编号")
+    private String deptNumber;
+
+    /**
+     * 显示顺序
+     */
+    @ApiModelProperty(value="显示顺序")
+    private Integer orderNum;
+
+    /**
+     * 负责人
+     */
+    @NotNull(message = "科室负责人不能为空")
+    @ApiModelProperty(value="负责人")
+    private String deptLeader;
+
+    /**
+     * 联系电话
+     */
+    @ApiModelProperty(value="联系电话")
+    private String leaderPhone;
+
+    /**
+     * 部门状态（0正常 1停用）
+     */
+    @NotNull(message = "科室状态不能为空")
+    @ApiModelProperty(value="部门状态（0正常 1停用）")
+    private String status;
+
+    /**
+     * 删除标志（0正常 1删除）
+     */
+    @ApiModelProperty(value="删除标志（0正常 1删除）")
+    private String delFlag;
+
+    /**
+     * 创建时间
+     */
+    @TableField(fill = FieldFill.INSERT)
+    @ApiModelProperty(value="创建时间")
+    private Date createTime;
+
+    /**
+     * 更新时间
+     */
+    @ApiModelProperty(value="更新时间")
+    private Date updateTime;
+
+    /**
+     * 创建者
+     */
+    @ApiModelProperty(value="创建者")
+    private String createBy;
+
+    /**
+     * 更新者
+     */
+    @ApiModelProperty(value="更新者")
+    private String updateBy;
+
+}

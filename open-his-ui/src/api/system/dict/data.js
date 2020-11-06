@@ -39,7 +39,7 @@ export function deleteDictDataByIds(dictCodeIds) {
 }
 export function getDataByType(dictType) {
   return request({
-    url: baseurl + 'getDataByType/' + dictType,
+    url: baseurl + 'selectDicDataBydictType/' + dictType,
     method: 'get'
   })
 }

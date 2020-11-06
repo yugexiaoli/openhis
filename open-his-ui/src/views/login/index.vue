@@ -77,7 +77,7 @@
 <script>
 
 import SocialSign from './components/SocialSignin'
-
+import { dictCacheAsync } from '@/api/system/dict/type'
 export default {
   name: 'Login',
   components: { SocialSign },
@@ -157,6 +157,8 @@ export default {
           this.$store.dispatch('user/login', this.loginForm)
             .then(() => {
               this.$router.push({ path: this.redirect || '/', query: this.otherQuery })
+              // 字典缓存
+              dictCacheAsync()
               this.loading = false
             })
             .catch(() => {
