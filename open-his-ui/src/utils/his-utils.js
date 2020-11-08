@@ -27,3 +27,29 @@ export function selectDictLabel(datas, value) {
   })
   return actions.join('')
 }
+
+/** 构造树
+ * @Param {*} data 数据源
+ * @Param {*} id 字段ID 默认id
+ * @Param {*} parentId 父节字段  默认 parentId
+ * @Param {*} 子节点字段  默认 children
+ * @Param {*} rootId 根节点ID 默认0
+*/
+export function handleTree(data, id, parentId, children, rootId) {
+  id = id || 'id'
+  parentId = parentId || 'parentId'
+  children = children || 'children'
+  rootId = rootId || 0
+  // 对源数据深度克隆
+  const cloneData = JSON.parse(JSON.stringify(data))
+  // 循环所有项目
+  const treeData = cloneData.filter(father => {
+    const branchArr = cloneData.filter(child => {
+      return father[id] === child[parentId]
+    })
+    branchArr.length > 0 ? father.children = branchArr : ''
+    // 返回上一层
+    return father[parentId] === rootId
+  })
+  return treeData !== '' ? treeData : data
+}

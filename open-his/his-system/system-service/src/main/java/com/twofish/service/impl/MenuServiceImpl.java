@@ -1,8 +1,11 @@
 package com.twofish.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.twofish.constants.Constants;
 import com.twofish.domain.SimpleUser;
+import com.twofish.dto.MenuDto;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
@@ -28,5 +31,47 @@ public class MenuServiceImpl implements MenuService{
            //系统用户，根据用户id关联角色菜单来查菜单[未完成]
            return this.menuMapper.selectList(wrapper);
        }
+    }
+
+    @Override
+    public List<Menu> listAllMenus(MenuDto menuDto) {
+        QueryWrapper<Menu> qw = new QueryWrapper<>();
+        qw.like(StringUtils.isNotBlank(menuDto.getMenuName()),Menu.COL_MENU_NAME,menuDto.getMenuName());
+        qw.eq(null!=menuDto.getStatus(),Menu.COL_STATUS,menuDto.getStatus());
+        return menuMapper.selectList(qw);
+    }
+
+    @Override
+    public int addMenu(MenuDto menuDto) {
+        Menu menu = new Menu();
+        BeanUtil.copyProperties(menuDto,menu);
+        //设置创建人
+        menu.setCreateBy(menuDto.getSimpleUser().getUserName());
+        return menuMapper.insert(menu);
+    }
+
+    @Override
+    public Menu getMenuById(Long menuId) {
+        return menuMapper.selectById(menuId);
+    }
+
+    @Override
+    public int updateMenu(MenuDto menuDto) {
+        Menu menu = new Menu();
+        BeanUtil.copyProperties(menuDto,menu);
+        //设置修改人
+        menu.setUpdateBy(menuDto.getSimpleUser().getUserName());
+        return menuMapper.updateById(menu);
+    }
+
+    @Override
+    public int deleteMenuById(Long menuId) {
+        //先删除role_menu中间表的数据，再删除菜单
+        return menuMapper.deleteById(menuId);
+    }
+
+    @Override
+    public Boolean hasChildByMenuId(Long menuId) {
+        return  menuMapper.queryChildCountByMenuId(menuId) > 0L ? true :false;
     }
 }

@@ -95,7 +95,7 @@ export const asyncRoutes = [
       },
       {
         path: 'menu',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/system/menu/menu'),
         name: '/system/menu',
         meta: {
           title: '菜单管理',
