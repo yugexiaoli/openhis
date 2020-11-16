@@ -114,5 +114,16 @@ public class MenuController {
         return AjaxResult.success(menus);
     }
 
+    /**
+     * 根据角色ID查询已分配菜单ID[只查子节点]
+     * @param roleId
+     * @return
+     */
+    @GetMapping("getMenuIdsByRoleId/{roleId}")
+    @ApiOperation(value = "根据角色ID查询已分配菜单ID[只查子节点]",notes = "根据角色ID查询已分配菜单ID[只查子节点]")
+    public AjaxResult getMenuIdsByRoleId(@PathVariable  Long roleId){
+        return AjaxResult.success("查询成功",this.menuService.getMenuIdsByRoleId(roleId));
+    }
+
 
 }

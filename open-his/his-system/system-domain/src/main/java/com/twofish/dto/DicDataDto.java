@@ -11,6 +11,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
@@ -41,28 +42,28 @@ public class DicDataDto extends BaseDto {
      * 字典标签
      */
     @ApiModelProperty(value="字典标签")
-    @NotNull(message = "字典标签不能为空")
+    @NotBlank(message = "字典标签不能为空")
     private String dictLabel;
 
     /**
      * 字典键值
      */
     @ApiModelProperty(value="字典键值")
-    @NotNull(message = "字典键值不能为空")
+    @NotBlank(message = "字典键值不能为空")
     private String dictValue;
 
     /**
      * 字典类型
      */
     @ApiModelProperty(value="字典类型")
-    @NotNull(message = "字典类型不能为空")
+    @NotBlank(message = "字典类型不能为空")
     private String dictType;
 
     /**
      * 状态（0正常 1停用）
      */
     @ApiModelProperty(value="状态（0正常 1停用）")
-    @NotNull(message = "状态不能为空")
+    @NotBlank(message = "状态不能为空")
     private String status;
 
     /**

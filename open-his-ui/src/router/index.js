@@ -77,7 +77,7 @@ export const asyncRoutes = [
       },
       {
         path: 'user',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/system/user/user'),
         name: '/system/user',
         meta: {
           title: '用户管理',
@@ -86,7 +86,7 @@ export const asyncRoutes = [
       },
       {
         path: 'role',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/system/role/role'),
         name: '/system/role',
         meta: {
           title: '角色管理',

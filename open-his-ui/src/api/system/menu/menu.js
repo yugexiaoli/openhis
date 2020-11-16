@@ -43,3 +43,10 @@ export function deleteMenuById(menuId) {
     method: 'delete'
   })
 }
+
+export function getMenuIdsByRoleId(roleId) {
+  return request({
+    url: baseurl + 'getMenuIdsByRoleId/' + roleId,
+    method: 'get'
+  })
+}

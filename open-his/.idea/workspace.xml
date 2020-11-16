@@ -14,19 +14,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4cedbdc-7988-4eb5-be06-3652a390af02" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/MenuDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/AppMd5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/RoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/system/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/system/menu/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/utils/his-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/utils/his-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/MenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/MenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/domain/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/domain/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/DeptDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/DeptDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/DicDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/DicDataDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/DicTypeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/DicTypeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/MenuDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/MenuDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/OperLogDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/OperLogDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/DeptDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/DeptDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/DicDataDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/DicDataDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/DicTypeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/DicTypeDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/MenuDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/MenuDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/OperLogDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/target/classes/com/twofish/dto/OperLogDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/twofish/mapper/MenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/twofish/mapper/MenuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/twofish/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/target/classes/com/twofish/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-mapper/target/classes/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/target/classes/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-mapper/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-mapper/target/classes/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/MenuController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +233,15 @@
       <workItem from="1604590641627" duration="7810000" />
       <workItem from="1604645700622" duration="7158000" />
       <workItem from="1604682132561" duration="9933000" />
-      <workItem from="1604773488337" duration="3945000" />
+      <workItem from="1604773488337" duration="4564000" />
+      <workItem from="1605059995892" duration="5228000" />
+      <workItem from="1605078557955" duration="1993000" />
+      <workItem from="1605129576983" duration="776000" />
+      <workItem from="1605153362114" duration="4220000" />
+      <workItem from="1605223880860" duration="4154000" />
+      <workItem from="1605308898168" duration="9940000" />
+      <workItem from="1605399000726" duration="785000" />
+      <workItem from="1605489604387" duration="4477000" />
     </task>
     <task id="LOCAL-00001" summary="server second commit&#10;ccy&#10;2020/0/31">
       <created>1604078368190</created>
@@ -282,10 +322,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="528" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604174374148" />
-    <state x="981" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1604712170279">
+    <state x="981" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1605490846940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="981" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604712170279" />
+    <state x="981" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605490846940" />
     <state x="909" y="386" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603834588065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,38 +354,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1047" y="402" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604302964963" />
-    <state width="1344" height="186" key="GridCell.Tab.0.bottom" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.0.bottom" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
-    <state width="1344" height="186" key="GridCell.Tab.0.center" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.0.center" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
-    <state width="1344" height="186" key="GridCell.Tab.0.left" timestamp="1604798034335">
+    <state width="1631" height="61" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.0.left" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034335" />
-    <state width="1344" height="186" key="GridCell.Tab.0.right" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.0.right" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
-    <state width="1344" height="186" key="GridCell.Tab.1.bottom" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.1.bottom" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
-    <state width="1344" height="186" key="GridCell.Tab.1.center" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.1.center" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
-    <state width="1344" height="186" key="GridCell.Tab.1.left" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.1.left" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
-    <state width="1344" height="186" key="GridCell.Tab.1.right" timestamp="1604798034336">
+    <state width="1631" height="61" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
+    <state width="1631" height="61" key="GridCell.Tab.1.right" timestamp="1605506596987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1344" height="186" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604798034336" />
+    <state width="1631" height="61" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605506596987" />
     <state width="1392" height="307" key="GridCell.Tab.2.bottom" timestamp="1604536906301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -374,6 +414,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="896" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604154896165" />
+    <state x="1023" y="530" key="extract.method.dialog" timestamp="1605312514980">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1023" y="530" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605312514980" />
     <state x="731" y="202" width="1100" height="692" key="new project wizard" timestamp="1603742772885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,10 +426,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1038" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603911358276" />
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1604657581558">
+    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605227422167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604657581558" />
+    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605227422167" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

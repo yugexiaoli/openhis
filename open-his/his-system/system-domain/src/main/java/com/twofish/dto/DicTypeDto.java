@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
@@ -30,21 +31,21 @@ public class DicTypeDto extends BaseDto {
     /**
      * 字典名称
      */
-    @NotNull(message = "字典名称不能为空")
+    @NotBlank(message = "字典名称不能为空")
     @ApiModelProperty(value="字典名称")
     private String dictName;
 
     /**
      * 字典类型
      */
-    @NotNull(message = "字典类型不能为空")
+    @NotBlank(message = "字典类型不能为空")
     @ApiModelProperty(value="字典类型")
     private String dictType;
 
     /**
      * 状态（0正常 1停用）
      */
-    @NotNull(message = "字典状态不能为空")
+    @NotBlank(message = "字典状态不能为空")
     @ApiModelProperty(value="状态（0正常 1停用）")
     private String status;
 

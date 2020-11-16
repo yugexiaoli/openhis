@@ -27,6 +27,17 @@ export function selectDictLabel(datas, value) {
   })
   return actions.join('')
 }
+// 部门翻译 datas是当前部门数据列表 value要翻译的值
+export function selectDeptLabel(datas, value) {
+  var actions = []
+  Object.keys(datas).map((key) => {
+    if (datas[key].deptId === value) {
+      actions.push(datas[key].deptName)
+      return false
+    }
+  })
+  return actions.join('')
+}
 
 /** 构造树
  * @Param {*} data 数据源

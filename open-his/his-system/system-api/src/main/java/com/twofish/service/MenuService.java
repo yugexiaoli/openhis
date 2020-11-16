@@ -65,4 +65,11 @@ public interface MenuService {
      * @return
      */
     Boolean hasChildByMenuId(Long menuId);
+
+    /**
+     * 根据角色ID查询已分配菜单ID[只查子节点]
+     * @param roleId
+     * @return
+     */
+    List<Long> getMenuIdsByRoleId(Long roleId);
 }

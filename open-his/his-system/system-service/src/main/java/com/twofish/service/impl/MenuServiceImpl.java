@@ -51,6 +51,11 @@ public class MenuServiceImpl implements MenuService{
     }
 
     @Override
+    public List<Long> getMenuIdsByRoleId(Long roleId) {
+        return this.menuMapper.queryMenuIdsByRoleId(roleId);
+    }
+
+    @Override
     public Menu getMenuById(Long menuId) {
         return menuMapper.selectById(menuId);
     }
@@ -66,7 +71,8 @@ public class MenuServiceImpl implements MenuService{
 
     @Override
     public int deleteMenuById(Long menuId) {
-        //先删除role_menu中间表的数据，再删除菜单
+        //删除role_menu中间表的数据，再删除菜单
+        this.menuMapper.deleteRoleMenuByMenuid(menuId);
         return menuMapper.deleteById(menuId);
     }
 

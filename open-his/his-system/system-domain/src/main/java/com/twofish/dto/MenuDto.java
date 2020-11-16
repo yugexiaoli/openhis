@@ -11,6 +11,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
@@ -45,7 +46,7 @@ public class MenuDto extends BaseDto {
     /**
      * 菜单名称
      */
-    @NotNull(message = "菜单名称不能为空")
+    @NotBlank(message = "菜单名称不能为空")
     @ApiModelProperty(value="菜单名称")
     private String menuName;
 

@@ -12,6 +12,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
@@ -28,14 +29,14 @@ public class OperLogDto extends BaseDto {
     /**
      * 模块标题
      */
-    @NotNull(message = "模块标题不能为空")
+    @NotBlank(message = "模块标题不能为空")
     @ApiModelProperty(value="模块标题")
     private String title;
 
     /**
      * 业务类型（0其它 1新增 2修改 3删除）
      */
-    @NotNull(message = "业务类型不能为空")
+    @NotBlank(message = "业务类型不能为空")
     @ApiModelProperty(value="业务类型（0其它 1新增 2修改 3删除）")
     private String businessType;
 

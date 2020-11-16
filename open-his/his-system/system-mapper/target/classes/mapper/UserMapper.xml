@@ -39,4 +39,10 @@
     `status`, union_id, open_id, create_time, update_time, create_by, update_by, salt, 
     del_flag, scheduling_flag
   </sql>
+    <select id="getRoleIdsByUserId" resultType="java.lang.Long">
+        select role_id from sys_role_user where user_id=#{userId}
+    </select>
+    <insert id="insertUserRole">
+        insert into sys_role_user(user_id,role_id) values(#{userId},#{roleId})
+    </insert>
 </mapper>
