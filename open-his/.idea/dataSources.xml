@@ -11,5 +11,11 @@
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="gen" uuid="62a2a442-df9e-48c5-ac71-6e15f72e1d97">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:F:\360MoveData\Users\john\Desktop\open_his\open-his\his-system\system-web\src\main\resources\gen.db</jdbc-url>
+    </data-source>
   </component>
 </project>

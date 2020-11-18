@@ -5,7 +5,8 @@ import { getToken } from '@/utils/auth'
 
 const service = axios.create({
   baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
-  timeout: 5000 // 设置请求超时间
+  timeout: 5000, // 设置请求超时间
+  withCredentials: true
 })
 
 // 请求拦截

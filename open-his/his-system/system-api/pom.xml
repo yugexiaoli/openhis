@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.twofish</groupId>
-            <artifactId>system-domain</artifactId>
+            <artifactId>system-mapper</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>

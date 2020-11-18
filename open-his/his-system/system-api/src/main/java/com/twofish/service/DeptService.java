@@ -1,7 +1,6 @@
 package com.twofish.service;
 
 import com.twofish.domain.Dept;
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.twofish.dto.DeptDto;
 import com.twofish.vo.DataGridView;
 

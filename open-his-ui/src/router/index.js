@@ -113,7 +113,7 @@ export const asyncRoutes = [
       },
       {
         path: 'notice',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/system/notice/notice'),
         name: '/system/notice',
         meta: {
           title: '通知公告',
@@ -156,6 +156,65 @@ export const asyncRoutes = [
           icon: 'international'
         }
       }
+    ]
+  },
+  {
+    path: '/systemutil',
+    component: Layout,
+    redirect: 'noRedirect',
+    name: '/systemutil',
+    meta: {
+      title: '系统工具',
+      icon: 'el-icon-s-tools'
+    },
+    children: [
+      {
+        path: 'revenue',
+        component: () => import('@/views/system/document/doc'),
+        name: '/systemutil/doc',
+        meta: { title: '接口文档', icon: 'el-icon-document' }
+      },
+      {
+        path: 'sales',
+        component: () => import('@/views/system/iconpage/icon'),
+        name: '/systemutil/icon',
+        meta: { title: '系统图标', icon: 'icon' },
+        hidden: true
+      },
+      {
+        path: 'check',
+        component: () => import('@/views/system/formgen/formgen'),
+        name: '/systemutil/formgen',
+        meta: { title: '表单生成', icon: 'el-icon-edit' }
+      },
+
+      {
+        path: 'config',
+        name: '/systemutil/Config',
+        component: () => import('@/views/system/generate/index'),
+        meta: { title: '代码生成', icon: 'el-icon-edit' }
+      },
+      {
+        path: 'result/:config',
+        name: '/systemutil/Result',
+        component: () => import('@/views/system/generate/result'),
+        meta: { title: '生成结果', icon: 'el-icon-edit' },
+        hidden: true
+      },
+      {
+        path: 'list',
+        name: '/systemutil/List',
+        component: () => import('@/views/system/template/index'),
+        meta: { title: '模板管理', icon: 'el-icon-lock' }
+      },
+      {
+        path: 'edit/:id(\\d+)',
+        name: '/systemutil/Edit',
+        component: () => import('@/views/system/template/edit'),
+        meta: { 'title': '编辑模板', icon: 'el-icon-edit' },
+        hidden: true
+      }
+
     ]
   },
   {
