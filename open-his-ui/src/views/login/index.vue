@@ -57,28 +57,65 @@
           <span />
         </div>
 
-        <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
+        <el-button class="thirdparty-button" type="primary" @click="thirdLogin">
           第三方登录
         </el-button>
       </div>
     </el-form>
 
     <!--  第三方登录弹出层 -->
-    <el-dialog title="Or connect with" :visible.sync="showDialog">
-      Can not be simulated on local, so please combine you own business simulation! ! !
-      <br>
-      <br>
-      <br>
-      <social-sign />
+    <el-dialog class="thirdLogin" title="人脸识别登录" :visible.sync="showDialog">
+      <div class="box">
+        <div class="right">
+          <div class="video">
+            <video id="video" width="300px" height="300px" autoplay="autoplay" />
+            <el-button ref="mybutton" style="margin-left:100px;margin-top:20px;" type="success" @click="openMedia">开始识别</el-button>
+            <canvas id="canvas" hidden width="250px" height="250px" />
+          </div>
+        </div>
+      </div>
+      <!-- QQ微信登录 -->
+      <social-sign class="socialLogin" />
     </el-dialog>
   </div>
 </template>
+<style >
+    .thirdLogin{
+      position: absolute;
+      top: 20px;
 
+    }
+    .video{
+      width:300px;
+      height:300px;
+      margin:auto;
+      background:no-repeat url('https://p0.ssl.qhimgs1.com/sdr/400__/t013e610073e1219460.jpg');
+      background-size: 100% 100%;
+    }
+    .box{
+
+      width: 100%;
+      height: 500px;
+      background-size:100%, 100%;
+    }
+    .socialLogin{
+        position: absolute;
+        bottom: 5px;
+        right: 20px;
+    }
+</style>
 <script>
 
+</script>
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" color="120,148,255" opacity='0.8' zIndex="1" count="100" src="https://files.cnblogs.com/files/lfri/canvas-nest.js"></script>
+<script>
+var mediaStreamTrack;
 import SocialSign from './components/SocialSignin'
 import { dictCacheAsync } from '@/api/system/dict/type'
+import { search } from '@/api/face'
 export default {
+
   name: 'Login',
   components: { SocialSign },
   data() {
@@ -91,6 +128,8 @@ export default {
       }
     }
     return {
+      //第三方登录弹出层
+      showDialog:false,
       loginForm: {
         username: '13888001001',
         password: '001001'
@@ -120,7 +159,7 @@ export default {
     }
   },
   created() {
-    // window.addEventListener('storage', this.afterQRScan)
+
   },
   mounted() {
     if (this.loginForm.username === '') {
@@ -128,11 +167,57 @@ export default {
     } else if (this.loginForm.password === '') {
       this.$refs.password.focus()
     }
+
   },
   destroyed() {
-    // window.removeEventListener('storage', this.afterQRScan)
+
+  },
+  //关闭摄像头
+  beforeRouteLeave (to, from, next) {
+      this.$router.go(0);  //刷新路由
   },
   methods: {
+    //第三方登录
+    thirdLogin(){
+      this.showDialog=true
+    },
+    // 摄像头开启
+    openMedia(){
+      let constraints = {
+              video: {width: 500, height: 500},
+              audio: true
+          };
+          //获得video摄像头区域
+          let video = document.getElementById("video");
+          let promise = navigator.mediaDevices.getUserMedia(constraints);
+          promise.then(function (MediaStream) {
+              video.srcObject = MediaStream;
+              video.play();
+          });
+        this.chatTimer = setInterval(() => {
+           this.jiance();
+        }, 1000);
+    },
+    //摄像头截图
+    jiance() {
+      //获得Canvas对象
+      let video = document.getElementById("video");
+      let canvas = document.getElementById("canvas");
+      let ctx = canvas.getContext('2d');
+      ctx.drawImage(video, 0, 0, 250, 250);
+      //截取图片的base64编码
+      var imgSrc = document.getElementById("canvas").toDataURL("image/png").split("base64,")[1];
+
+      //做后台人脸验证
+      search(encodeURIComponent(imgSrc)).then(res=>{
+       console.log(res.data);
+       //返回结果中有一个face_token要存浏览器中，以后每次发请求携带face_token
+      })
+      //关闭对话框，不截图
+      if(this.showDialog===false){
+          clearInterval(this.chatTimer);
+      }
+    },
     checkCapslock(e) {
       const { key } = e
       this.capsTooltip = key && key.length === 1 && (key >= 'A' && key <= 'Z')

@@ -41,6 +41,7 @@ spring:
 #shiro配置
 shiro:
   anon-urls:
+    - /system/face/*
     - /login/doLogin*
     - /login/captcha*
     - /login/logout*
@@ -86,3 +87,8 @@ dubbo:
   config-center:
     timeout: 10000
 
+#百度人脸识别
+baiduaip:
+  APP_ID: '23012810'
+  API_KEY: '4oEhpdw6zAXwgF8DqNkZrmAK'
+  SECRET_KEY: 'sn5llQBxbXS8MVv1gmV1ltSfjsODGHLb'
