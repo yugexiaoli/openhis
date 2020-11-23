@@ -28,7 +28,7 @@ spring:
   #配置redis
   redis:
     port: 6390
-    host: 8.129.120.248
+    host: 8.135.11.231
     password: 123456
 
   #配置前传后后转前的日期格式
@@ -45,6 +45,7 @@ shiro:
     - /login/doLogin*
     - /login/captcha*
     - /login/logout*
+    - /login/faceLogin/*
     #druid开放
     - /druid/**
   authc-urls:
@@ -69,9 +70,9 @@ fdfs:
     width: 100
     height: 100
   tracker-list:          # tracker服务配置地址列表
-    - 8.129.120.248:22122
+    - 8.135.11.231:22122
 upload:
-  base-url: 8.129.120.248:8888
+  base-url: 8.135.11.231:8888
   allow-types:
     - image/jpeg
     - image/png
@@ -81,10 +82,13 @@ dubbo:
   application:
     name: his-system-web-service
   registry:
-    address: zookeeper://8.129.120.248:2181
+    address: zookeeper://8.135.11.231:2181
+    timeout: 100000
   consumer:
     check: false
   config-center:
+    timeout: 10000
+  metadata-report:
     timeout: 10000
 
 #百度人脸识别

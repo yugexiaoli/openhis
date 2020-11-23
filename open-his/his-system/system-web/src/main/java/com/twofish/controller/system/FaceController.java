@@ -1,6 +1,5 @@
 package com.twofish.controller.system;
 
-import com.alibaba.fastjson.JSON;
 import com.twofish.service.FaceService;
 import com.twofish.vo.AjaxResult;
 import io.swagger.annotations.Api;
@@ -36,7 +35,7 @@ public class FaceController {
         //解决编码转义
         //反向解码得出username对应的二机制序列
 
-        return AjaxResult.success(null, JSON.toJSONString(faceService.search(imgSrc)));
+        return AjaxResult.success(null, faceService.search(imgSrc));
     }
 
 

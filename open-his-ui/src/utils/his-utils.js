@@ -2,6 +2,7 @@
 // 可以重置任何页面的表单
 export function resetForm(refName) {
   if (this.$refs[refName]) {
+    this.queryParams.pageNum = 1
     this.$refs[refName].resetFields()
   }
 }
@@ -36,6 +37,18 @@ export function selectDeptLabel(datas, value) {
       return false
     }
   })
+  return actions.join('')
+}
+// 厂家翻译 datas是当前厂家数据列表 value要翻译的值
+export function selectProducterLabel(datas, value) {
+  var actions = []
+  Object.keys(datas).map((key) => {
+    if (datas[key].producterId.toString() === value) {
+      actions.push(datas[key].producterName)
+      return false
+    }
+  })
+
   return actions.join('')
 }
 

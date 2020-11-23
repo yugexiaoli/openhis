@@ -1,4 +1,5 @@
 package com.twofish.config.shiro;
+
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -32,6 +33,7 @@ import java.util.Map;
 @Configuration
 @EnableConfigurationProperties(value = {ShiroProperties.class, RedisProperties.class})
 public class ShiroAutoConfiguration {
+
 
     private ShiroProperties shiroProperties;
 
@@ -145,9 +147,13 @@ public class ShiroAutoConfiguration {
      */
     @Bean
     public DefaultWebSessionManager defaultWebSessionManager(RedisSessionDAO redisSessionDao) {
-        DefaultWebSessionManager defaultWebSessionManager = new TokenWebSessionManager();
-        defaultWebSessionManager.setSessionDAO(redisSessionDao);
-        return defaultWebSessionManager;
+//        DefaultWebSessionManager defaultWebSessionManager = new DefaultWebSessionManager();
+//        defaultWebSessionManager.setSessionDAO(redisSessionDao);
+//        return defaultWebSessionManager;
+
+        TokenWebSessionManager tokenWebSessionManager = new TokenWebSessionManager();
+        tokenWebSessionManager.setSessionDAO(redisSessionDao);
+        return tokenWebSessionManager;
     }
 
     /**

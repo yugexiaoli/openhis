@@ -30,3 +30,10 @@ export function getMenus() {
     method: 'get'
   })
 }
+// 人脸登录后端接口
+export function faceLogin(userId) {
+  return request({
+    url: '/login/faceLogin/' + userId,
+    method: 'get'
+  })
+}

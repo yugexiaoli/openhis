@@ -14,32 +14,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4cedbdc-7988-4eb5-be06-3652a390af02" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/Base64Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/CheckItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/FaceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/RegisteredItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/baiduaip/FaceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/CheckItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/domain/RegisteredItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/CheckItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/dto/RegisteredItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/CheckItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/java/com/twofish/mapper/RegisteredItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/CheckItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-mapper/src/main/resources/mapper/RegisteredItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/CheckItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/FaceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/RegisteredItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/CheckItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/FaceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/RegisteredItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/MedicinesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/ProducterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/ProviderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/Medicines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/Producter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/MedicinesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/ProducterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/ProviderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/MedicinesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/ProducterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/ProviderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/MedicinesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/ProducterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/ProviderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/MedicinesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/ProducterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/ProviderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/baiduaip/FaceList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/baiduaip/FaceResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-domain/src/main/java/com/twofish/baiduaip/RootResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/MedicinesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/ProducterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/ProviderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/store/modules/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/utils/his-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/utils/his-utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/checkItem/checkItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/checkItem/checkItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/dept/dept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/dept/dept.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/dict/data.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/dict/data.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/dict/type.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/dict/type.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/document/doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/document/doc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/log/loginlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/log/loginlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/log/operlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/log/operlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/notice/notice.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/notice/notice.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/registeredItem/registeredItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/registeredItem/registeredItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/role/role.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/role/role.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/user/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/user/user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/META-INF/his-commons.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-statistics/statistics-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-statistics/statistics-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/FaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/FaceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/FaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/FaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-domain/target/classes/META-INF/system-domain.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/FaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/FaceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/FaceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/FaceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/mybatisplus/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/config/mybatisplus/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/mybatisplus/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/config/mybatisplus/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/shiro/ShiroAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/shiro/ShiroAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/shiro/TokenWebSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/shiro/TokenWebSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/shiro/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/config/shiro/UserRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/FaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/FaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/mybatisplus/MyMetaObjectHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/mybatisplus/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/shiro/ShiroAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/shiro/ShiroAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/shiro/TokenWebSessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/shiro/TokenWebSessionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/shiro/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/config/shiro/UserRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/FaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/FaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/LoginController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +138,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-system/system-web/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -101,7 +146,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="com.ccnode.codegenerator.ab.e" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -115,11 +160,11 @@
       <recent name="com.twofish.controller.system" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-commons\src\main\java\com\twofish\config" />
+      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-statistics\statistics-service\src\main\java\com\twofish" />
+      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-service\src\main\java\com\twofish" />
+      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-service\src\main\java\com\twofish\config" />
       <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-system\system-web\src\main\resources" />
-      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-commons\src\main\java\com\twofish\utils" />
-      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-system\system-api\src\main\java\com\twofish\service" />
-      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-system\system-mapper\src\main\java\com\twofish\mapper" />
-      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-system\system-web\src\main\java\com\twofish" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,7 +174,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SystemApplication">
+  <component name="RunManager" selected="Spring Boot.ErpApplication">
     <configuration name="DoctorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="doctor-service" />
       <extension name="coverage">
@@ -185,8 +230,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SystemApplication" />
-        <item itemvalue="Spring Boot.StatisticsApplication" />
         <item itemvalue="Spring Boot.ErpApplication" />
+        <item itemvalue="Spring Boot.StatisticsApplication" />
         <item itemvalue="Spring Boot.DoctorApplication" />
       </list>
     </recent_temporary>
@@ -233,6 +278,10 @@
       <workItem from="1605613222804" duration="27233000" />
       <workItem from="1605747394137" duration="6347000" />
       <workItem from="1605789997887" duration="24844000" />
+      <workItem from="1605840597428" duration="20409000" />
+      <workItem from="1605929306163" duration="11321000" />
+      <workItem from="1606042238067" duration="3246000" />
+      <workItem from="1606111849065" duration="6920000" />
     </task>
     <task id="LOCAL-00001" summary="server second commit&#10;ccy&#10;2020/0/31">
       <created>1604078368190</created>
@@ -313,10 +362,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="528" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604174374148" />
-    <state x="981" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1605795920596">
+    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1605855895441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="981" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605795920596" />
+    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605855895441" />
     <state x="909" y="386" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603834588065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -345,42 +394,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="134" y="134" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604100512651" />
-    <state x="1047" y="402" key="FileChooserDialogImpl" timestamp="1604302964963">
+    <state x="906" y="299" key="FileChooserDialogImpl" timestamp="1605930300499">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1047" y="402" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604302964963" />
-    <state width="1631" height="205" key="GridCell.Tab.0.bottom" timestamp="1605818001648">
+    <state x="906" y="299" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605930300499" />
+    <state width="1391" height="194" key="GridCell.Tab.0.bottom" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001648" />
-    <state width="1631" height="205" key="GridCell.Tab.0.center" timestamp="1605818001648">
+    <state width="1391" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.0.center" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001648" />
-    <state width="1631" height="205" key="GridCell.Tab.0.left" timestamp="1605818001648">
+    <state width="1391" height="194" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.0.left" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001648" />
-    <state width="1631" height="205" key="GridCell.Tab.0.right" timestamp="1605818001648">
+    <state width="1391" height="194" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.0.right" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001648" />
-    <state width="1631" height="205" key="GridCell.Tab.1.bottom" timestamp="1605818001649">
+    <state width="1391" height="194" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.1.bottom" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001649" />
-    <state width="1631" height="205" key="GridCell.Tab.1.center" timestamp="1605818001649">
+    <state width="1391" height="194" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.1.center" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001649" />
-    <state width="1631" height="205" key="GridCell.Tab.1.left" timestamp="1605818001648">
+    <state width="1391" height="194" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.1.left" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001648" />
-    <state width="1631" height="205" key="GridCell.Tab.1.right" timestamp="1605818001649">
+    <state width="1391" height="194" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
+    <state width="1391" height="194" key="GridCell.Tab.1.right" timestamp="1606136594731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1631" height="205" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605818001649" />
+    <state width="1391" height="194" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606136594731" />
     <state width="1392" height="307" key="GridCell.Tab.2.bottom" timestamp="1604536906301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -401,14 +450,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1605637910872" />
-    <state x="496" y="209" key="Maven.ArtifactSearchDialog" timestamp="1605628747340">
+    <state x="496" y="209" width="1223" height="691" key="Maven.ArtifactSearchDialog" timestamp="1605842611307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="496" y="209" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605628747340" />
-    <state x="747" y="328" key="SettingsEditor" timestamp="1603835284782">
+    <state x="496" y="209" width="1223" height="691" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605842611307" />
+    <state x="747" y="328" key="SettingsEditor" timestamp="1605930068016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="747" y="328" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603835284782" />
+    <state x="747" y="328" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605930068016" />
     <state width="807" height="517" key="XDebugger.FullValuePopup" timestamp="1604534805891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -437,10 +486,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1038" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605815960355" />
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605634082063">
+    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1605842112095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605634082063" />
+    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605842112095" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

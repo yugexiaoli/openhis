@@ -1,22 +1,19 @@
 package com.twofish.controller.system;
 
 import cn.hutool.core.date.DateUtil;
-import com.twofish.aspectj.annotation.Log;
-import com.twofish.aspectj.enums.BusinessType;
+import com.twofish.constants.Constants;
+import com.twofish.constants.HttpStatus;
 import com.twofish.domain.LoginInfo;
+import com.twofish.domain.Menu;
+import com.twofish.domain.SimpleUser;
 import com.twofish.domain.User;
 import com.twofish.service.LoginInfoService;
+import com.twofish.service.MenuService;
 import com.twofish.service.UserService;
 import com.twofish.utils.AddressUtils;
 import com.twofish.utils.IpUtils;
-import com.twofish.utils.ServletUtils;
 import com.twofish.utils.ShiroSecurityUtils;
 import com.twofish.vo.ActivierUser;
-import com.twofish.constants.Constants;
-import com.twofish.constants.HttpStatus;
-import com.twofish.domain.Menu;
-import com.twofish.domain.SimpleUser;
-import com.twofish.service.MenuService;
 import com.twofish.vo.AjaxResult;
 import com.twofish.vo.LoginBodyDto;
 import com.twofish.vo.MenuTreeVo;
@@ -27,12 +24,8 @@ import lombok.extern.log4j.Log4j2;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -50,6 +43,8 @@ import java.util.List;
 @Api(value = "系统登录接口",tags = "登录接口")
 public class LoginController {
 
+    @Resource
+    private UserService userService;
     @Resource
     private MenuService menuService;
     @Resource
@@ -85,6 +80,40 @@ public class LoginController {
         this.loginInfoService.insertLoginIno(loginInfo);
         return ajax;
     }
+
+
+    /**
+     * 人脸登录
+     * @return
+     *
+     */
+    @GetMapping("login/faceLogin/{userId}")
+    @ApiOperation(value = "人脸登录",notes = "人脸登录")
+    public AjaxResult faceLogin(@PathVariable Long userId, HttpServletRequest request){
+        User user = userService.getone(userId);
+        Subject subject = SecurityUtils.getSubject();
+        AjaxResult ajax = AjaxResult.success();
+        UsernamePasswordToken token = new UsernamePasswordToken(user.getPhone(),user.getPhone().substring(5));
+        LoginInfo loginInfo = this.createLoginInfo(request);
+        loginInfo.setLoginAccount(user.getPhone());
+        try {
+            subject.login(token);
+            Serializable webtoken = subject.getSession().getId();
+            ajax.put(Constants.TOKEN,webtoken);
+            //登录日志
+            loginInfo.setUserName(ShiroSecurityUtils.getCurrentUserName());
+            loginInfo.setLoginStatus(Constants.LOGIN_SUCCESS);
+            loginInfo.setMsg("登陆成功");
+        }catch (Exception e){
+            log.error("登录错误信息："+e.getMessage());
+            ajax=AjaxResult.error(HttpStatus.ERROR,"用户名或密码错误");
+            loginInfo.setLoginStatus(Constants.LOGIN_ERROR);
+            loginInfo.setMsg("登陆失败，用户名或密码错误");
+        }
+        this.loginInfoService.insertLoginIno(loginInfo);
+        return ajax;
+    }
+
 
 
     /**
@@ -167,6 +196,7 @@ public class LoginController {
         ajax.put("menuTreeVos",menuTreeVos);
         return ajax;
     }
+
 
 
 

@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "baiduaip",
+      "type": "com.twofish.baiduaip.FaceConfig",
+      "sourceType": "com.twofish.baiduaip.FaceConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "baiduaip.a-p-i-k-e-y",
+      "type": "java.lang.String",
+      "sourceType": "com.twofish.baiduaip.FaceConfig"
+    },
+    {
+      "name": "baiduaip.a-p-p-i-d",
+      "type": "java.lang.String",
+      "sourceType": "com.twofish.baiduaip.FaceConfig"
+    },
+    {
+      "name": "baiduaip.s-e-c-r-e-t-k-e-y",
+      "type": "java.lang.String",
+      "sourceType": "com.twofish.baiduaip.FaceConfig"
+    }
+  ],
+  "hints": []
+}

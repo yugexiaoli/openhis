@@ -213,6 +213,13 @@ export const asyncRoutes = [
         component: () => import('@/views/system/template/edit'),
         meta: { 'title': '编辑模板', icon: 'el-icon-edit' },
         hidden: true
+      },
+      {
+        path: '/system/face',
+        name: '/system/face',
+        component: () => import('@/views/error-page/404'),
+        meta: { 'title': '人脸识别', icon: 'international' }
+
       }
 
     ]
@@ -266,19 +273,19 @@ export const asyncRoutes = [
     children: [
       {
         path: 'producter',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/erp/producter/index'),
         name: '/stock/producter',
         meta: { title: '生产厂家维护', icon: 'list' }
       },
       {
         path: 'medicinal',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/erp/medicines/medicines'),
         name: '/stock/medicinal',
         meta: { title: '药品信息维护', icon: 'list' }
       },
       {
         path: 'provider',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/erp/provider/provider'),
         name: '/stock/provider',
         meta: { title: '供应商维护', icon: 'list' }
       },

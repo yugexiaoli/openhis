@@ -16,12 +16,21 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
-<!--        <dependency>-->
+        <dependency>
+            <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+        <!--        <dependency>-->
 <!--            <groupId>com.twofish</groupId>-->
 <!--            <artifactId>system-web</artifactId>-->
 <!--            <version>1.0</version>-->
 <!--            <scope>compile</scope>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
     </dependencies>
 
 

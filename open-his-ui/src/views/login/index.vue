@@ -79,31 +79,7 @@
     </el-dialog>
   </div>
 </template>
-<style >
-    .thirdLogin{
-      position: absolute;
-      top: 20px;
 
-    }
-    .video{
-      width:300px;
-      height:300px;
-      margin:auto;
-      background:no-repeat url('https://p0.ssl.qhimgs1.com/sdr/400__/t013e610073e1219460.jpg');
-      background-size: 100% 100%;
-    }
-    .box{
-
-      width: 100%;
-      height: 500px;
-      background-size:100%, 100%;
-    }
-    .socialLogin{
-        position: absolute;
-        bottom: 5px;
-        right: 20px;
-    }
-</style>
 <script>
 
 </script>
@@ -113,7 +89,7 @@
 var mediaStreamTrack;
 import SocialSign from './components/SocialSignin'
 import { dictCacheAsync } from '@/api/system/dict/type'
-import { search } from '@/api/face'
+
 export default {
 
   name: 'Login',
@@ -206,13 +182,28 @@ export default {
       let ctx = canvas.getContext('2d');
       ctx.drawImage(video, 0, 0, 250, 250);
       //截取图片的base64编码
-      var imgSrc = document.getElementById("canvas").toDataURL("image/png").split("base64,")[1];
+      const imgSrc =encodeURIComponent( document.getElementById("canvas").toDataURL("image/png").split("base64,")[1]);
 
-      //做后台人脸验证
-      search(encodeURIComponent(imgSrc)).then(res=>{
-       console.log(res.data);
+        this.$store.dispatch('user/search',imgSrc)
+        .then((user_id)=>{
+           clearInterval(this.chatTimer);
+          var userId=user_id
+          //识别成功
+          this.msgSuccess('识别成功')
+          this.$store.dispatch('user/faceLogin',userId)
+          .then(()=>{
+             this.msgSuccess('登录成功,页面跳转中...')
+              // 字典缓存
+            dictCacheAsync()
+            //  this.$router.push('/')
+            this.$router.push({ path: this.redirect || '/', query: this.otherQuery })
+          })
+
+        }).catch(()=>{
+          console.log('识别失败');
+        })
        //返回结果中有一个face_token要存浏览器中，以后每次发请求携带face_token
-      })
+
       //关闭对话框，不截图
       if(this.showDialog===false){
           clearInterval(this.chatTimer);
@@ -232,7 +223,7 @@ export default {
         this.$refs.password.focus()
       })
     },
-    // 登录操作
+    // 按钮登录操作
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
         // 验证表单
@@ -286,6 +277,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 /* 修复input 背景不协调 和光标变色 */
 /* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
 
@@ -322,6 +314,29 @@ $cursor: #fff;
       }
     }
   }
+      .thirdLogin{
+      position: absolute;
+      top: 20px;
+
+    }
+    .video{
+      width:300px;
+      height:300px;
+      margin:auto;
+      background:no-repeat url('../../assets/bgimg/rlsb.jpg');
+      background-size: 100% 100%;
+    }
+    .box{
+
+      width: 100%;
+      height: 500px;
+      background-size:100%, 100%;
+    }
+    .socialLogin{
+        position: absolute;
+        bottom: 5px;
+        right: 20px;
+    }
 
   .el-form-item {
     border: 1px solid rgba(255, 255, 255, 0.1);

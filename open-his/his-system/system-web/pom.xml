@@ -169,6 +169,13 @@
             <artifactId>jtds</artifactId>
             <version>1.2.2</version>
         </dependency>
+        <!-- dubbo调用erp依赖-->
+        <dependency>
+            <groupId>com.twofish</groupId>
+            <artifactId>erp-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!--   代码生成依赖结束     -->
 

@@ -1,6 +1,6 @@
 package com.twofish.service;
 
-import org.json.JSONObject;
+import com.twofish.baiduaip.RootResult;
 
 public interface FaceService {
 
@@ -9,7 +9,7 @@ public interface FaceService {
      * @param imgSrc
      * @return
      */
-    JSONObject search(String imgSrc);
+    RootResult search(String imgSrc);
 
 
 }

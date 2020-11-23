@@ -1,6 +1,8 @@
 import { login, logout, getInfo } from '@/api/user'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 import { resetRouter } from '@/router'
+import { search } from '@/api/face'
+import { faceLogin } from '@/api/user'
 const state = {
   token: getToken(),
   name: '',
@@ -47,7 +49,38 @@ const actions = {
       })
     })
   },
+  // 人脸搜索，
+  search({ commit }, imgSrc) {
+    return new Promise((resolve, reject) => {
+      search(imgSrc).then(res => {
+        // 调用后台api人脸接口，返回人脸token，设置token
+        if (res.data.error_code !== '0') {
+          reject()
+        }
+        const token = res.data.result.face_token
 
+        commit('SET_TOKEN', token)
+        setToken(token)
+        resolve(res.data.result.user_list[0].user_id)
+      }).catch(error => {
+        reject(error)
+      })
+    })
+  },
+  // 人脸登录，
+  faceLogin({ commit }, userId) {
+    return new Promise((resolve, reject) => {
+      faceLogin(userId).then(res => {
+        const token = res.token
+        commit('SET_TOKEN', token)
+
+        setToken(token)
+        resolve()
+      }).catch(error => {
+        reject(error)
+      })
+    })
+  },
   // 获取用户信息
   getInfo({ commit, state }) {
     return new Promise((resolve, reject) => {

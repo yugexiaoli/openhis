@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "shiro",
+      "type": "com.twofish.config.shiro.ShiroProperties",
+      "sourceType": "com.twofish.config.shiro.ShiroProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shiro.anon-urls",
+      "type": "java.lang.String[]",
+      "description": "不拦击的路径",
+      "sourceType": "com.twofish.config.shiro.ShiroProperties"
+    },
+    {
+      "name": "shiro.authc-urls",
+      "type": "java.lang.String[]",
+      "description": "拦截的路径",
+      "sourceType": "com.twofish.config.shiro.ShiroProperties"
+    },
+    {
+      "name": "shiro.hash-algorithm-name",
+      "type": "java.lang.String",
+      "description": "密码加密方式",
+      "sourceType": "com.twofish.config.shiro.ShiroProperties",
+      "defaultValue": "md5"
+    },
+    {
+      "name": "shiro.hash-iterations",
+      "type": "java.lang.Integer",
+      "description": "密码散列次数",
+      "sourceType": "com.twofish.config.shiro.ShiroProperties",
+      "defaultValue": 2
+    }
+  ],
+  "hints": []
+}

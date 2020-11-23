@@ -1,10 +1,10 @@
 package com.twofish.config.shiro;
 
 import com.twofish.constants.Constants;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.apache.shiro.web.util.WebUtils;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.util.StringUtils;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -19,13 +19,19 @@ import java.util.UUID;
  */
 @Configuration
 public class TokenWebSessionManager extends DefaultWebSessionManager {
+
     @Override
     protected Serializable getSessionId(ServletRequest request, ServletResponse response) {
+
         //从头里面得到请求TOKEN 如果不存在就生成一个
-        String header = WebUtils.toHttp(request).getHeader(Constants.TOKEN);
-        if(StringUtils.hasText(header)){
-            return  header;
+        String token = WebUtils.toHttp(request).getHeader(Constants.TOKEN);
+        if(StringUtils.isNotBlank(token)){
+            return token;
         }
-        return  UUID.randomUUID().toString() ;
+        String uuid = UUID.randomUUID().toString();
+        return uuid;
+
     }
+
+
 }

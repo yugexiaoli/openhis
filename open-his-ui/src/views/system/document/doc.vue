@@ -1,6 +1,6 @@
 <template>
   <div class="appcontanner">
-    <iframe src="http://8.129.120.248:3000/project/20/interface/api" frameborder="0" width="100%" height="100%" />
+    <iframe src="http://8.135.11.231:3000/project/11/interface/api" frameborder="0" width="100%" height="100%" />
   </div>
 </template>
 

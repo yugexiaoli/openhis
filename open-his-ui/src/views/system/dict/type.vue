@@ -211,6 +211,7 @@ export default {
     },
     // 查询
     dosearch() {
+      this.searchForm.pageNum = 1
       this.initTable()
     },
     // 重置表单

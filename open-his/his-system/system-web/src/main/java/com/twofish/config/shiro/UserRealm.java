@@ -2,10 +2,7 @@ package com.twofish.config.shiro;
 import com.twofish.domain.User;
 import com.twofish.service.UserService;
 import com.twofish.vo.ActivierUser;
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -41,6 +38,7 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		//得到用户登陆名
 		String phone=token.getPrincipal().toString();
+		System.out.println("token====="+token);
 		//根据电话查询用户是否存在
 		User user = this.userService.querybyphone(phone);
 		if(null!=user){//说明用户存在，但是密码可能不正确
@@ -68,4 +66,6 @@ public class UserRealm extends AuthorizingRealm {
 		SimpleAuthorizationInfo info=new SimpleAuthorizationInfo();
 		return info;
 	}
+
+
 }

@@ -1,7 +1,9 @@
 package com.twofish.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baidu.aip.face.AipFace;
 import com.twofish.baiduaip.FaceConfig;
+import com.twofish.baiduaip.RootResult;
 import com.twofish.service.FaceService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.InitializingBean;
@@ -32,7 +34,7 @@ public class FaceServiceImpl implements FaceService, InitializingBean {
     }
 
     @Override
-    public JSONObject search(String imgSrc) {
+    public RootResult search(String imgSrc) {
 
         // 初始化一个AipFace
         AipFace client = new AipFace(APP_ID, API_KEY, SECRET_KEY);
@@ -44,7 +46,8 @@ public class FaceServiceImpl implements FaceService, InitializingBean {
         options.put("match_threshold", "70");
         options.put("quality_control", "NORMAL");
         options.put("liveness_control", "LOW");
-        options.put("user_id", "user1");
+        //options.put("user_id", "user1");
+        options.put("group_id_list", "id_1");
         options.put("max_user_num", "3");
 
         //encode解码
@@ -54,9 +57,12 @@ public class FaceServiceImpl implements FaceService, InitializingBean {
         }
 
         JSONObject res = client.search(decodeSrc, imageType,groupIdList, options);
+        String jsonString = JSON.toJSONString(res);
+        RootResult rootResult = JSON.parseObject(jsonString, RootResult.class);
+        System.out.println("face_token"+rootResult.getResult().getFace_token());
         //后台res中result中有一个face_token,需要存redis中，并且让shiro知道
-        
-        return res;
+
+        return rootResult;
     }
 
 
