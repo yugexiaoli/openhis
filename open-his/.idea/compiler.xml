@@ -12,17 +12,17 @@
         <module name="his-commons" />
         <module name="erp-mapper" />
         <module name="doctor-mapper" />
+        <module name="doctor-domain" />
         <module name="statistics-service" />
         <module name="statistics-api" />
         <module name="system-api" />
-        <module name="erp-api" />
+        <module name="system-service" />
         <module name="statistics-mapper" />
         <module name="system-domain" />
-        <module name="doctor-service" />
         <module name="statistics-domain" />
         <module name="system-web" />
-        <module name="doctor-domain" />
-        <module name="system-service" />
+        <module name="doctor-service" />
+        <module name="erp-api" />
         <module name="erp-service" />
       </profile>
     </annotationProcessing>

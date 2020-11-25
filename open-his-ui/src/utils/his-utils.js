@@ -48,7 +48,17 @@ export function selectProducterLabel(datas, value) {
       return false
     }
   })
-
+  return actions.join('')
+}
+// 供应商翻译 datas是当前供应商数据列表 value要翻译的值
+export function selectProviderLabel(datas, value) {
+  var actions = []
+  Object.keys(datas).map((key) => {
+    if (datas[key].providerId.toString() === value) {
+      actions.push(datas[key].providerName)
+      return false
+    }
+  })
   return actions.join('')
 }
 

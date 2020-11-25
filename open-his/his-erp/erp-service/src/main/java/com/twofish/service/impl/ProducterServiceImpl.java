@@ -10,6 +10,7 @@ import com.twofish.mapper.ProducterMapper;
 import com.twofish.service.ProducterService;
 import com.twofish.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Service;
 
 import javax.annotation.Resource;
@@ -17,7 +18,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-@Service
+@Service(methods = {@Method(name = "addProducter",retries = 0)})//dubbo添加操作不重试
 public class ProducterServiceImpl  implements ProducterService{
     @Resource
     private ProducterMapper producterMapper;

@@ -10,13 +10,15 @@ import com.twofish.mapper.ProviderMapper;
 import com.twofish.service.ProviderService;
 import com.twofish.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Service;
 
 import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
-@Service
+@Service(methods = {@Method(name = "addProvider",retries = 0)})
 public class ProviderServiceImpl  implements ProviderService{
     @Resource
     private ProviderMapper providerMapper;
@@ -27,7 +29,13 @@ public class ProviderServiceImpl  implements ProviderService{
         QueryWrapper<Provider> qw = new QueryWrapper<>();
         qw.like(StringUtils.isNotBlank(providerDto.getProviderName()),Provider.COL_PROVIDER_NAME,providerDto.getProviderName());
         qw.like(StringUtils.isNotBlank(providerDto.getContactName()),Provider.COL_CONTACT_NAME,providerDto.getContactName());
-        qw.like(StringUtils.isNotBlank(providerDto.getContactTel()),Provider.COL_CONTACT_TEL,providerDto.getContactTel());
+        qw.and(StringUtils.isNotBlank(providerDto.getContactTel()),new Consumer<QueryWrapper<Provider>>() {
+            @Override  //效果等同于：tel like ? or mobile like tel
+            public void accept(QueryWrapper<Provider> providerQueryWrapper) {
+                providerQueryWrapper.like(Provider.COL_CONTACT_TEL,providerDto.getContactTel())
+                        .or().like(Provider.COL_CONTACT_MOBILE,providerDto.getContactTel());
+            }
+        });
         qw.eq(null!=providerDto.getStatus(),Provider.COL_STATUS,providerDto.getStatus());
         providerMapper.selectPage(page,qw);
         return new DataGridView(page.getTotal(),page.getRecords());

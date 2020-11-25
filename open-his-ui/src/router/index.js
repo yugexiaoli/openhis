@@ -291,13 +291,13 @@ export const asyncRoutes = [
       },
       {
         path: 'purchase',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/erp/purchase/purchase'),
         name: '/stock/purchase',
         meta: { title: '采购入库列表', icon: 'list' }
       },
       {
         path: 'examine',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/erp/purchase/pending'),
         name: '/stock/examine',
         meta: { title: '入库审核', icon: 'list' }
       },

@@ -1,7 +1,9 @@
 package com.twofish.controller.erp;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.twofish.aspectj.annotation.Log;
 import com.twofish.aspectj.enums.BusinessType;
+import com.twofish.controller.BaseController;
 import com.twofish.dto.MedicinesDto;
 import com.twofish.service.MedicinesService;
 import com.twofish.utils.ShiroSecurityUtils;
@@ -28,7 +30,7 @@ import javax.validation.constraints.NotNull;
 @Log4j2
 @Api(value = "药品信息表数据接口",tags = "药品信息表数据接口")
 @RequestMapping("/erp/medicines/")
-public class MedicinesController {
+public class MedicinesController  extends BaseController {
 
     @Reference
     private MedicinesService medicinesService;
@@ -40,6 +42,7 @@ public class MedicinesController {
      */
     @GetMapping("listMedicinesForPage")
     @ApiOperation(value = "分页查询药品信息表数据",notes = "药品信息表数据分页")
+    @HystrixCommand
     public AjaxResult listMedicinesForPage(MedicinesDto medicinesDto){
         DataGridView dataGridView = this.medicinesService.listMedicinesForPage(medicinesDto);
         return AjaxResult.success("查询成功",dataGridView.getData(),dataGridView.getTotal());
@@ -53,6 +56,7 @@ public class MedicinesController {
     @Log(title = "添加药品信息表数据",businessType = BusinessType.INSERT)
     @PostMapping("addMedicines")
     @ApiOperation(value = "添加药品信息表数据",notes = "添加药品信息表数据")
+    @HystrixCommand
     public AjaxResult addMedicines(@Validated MedicinesDto medicinesDto){
         //设置添加人
         medicinesDto.setSimpleUser(ShiroSecurityUtils.getCurrentSimpleUser());
@@ -67,6 +71,7 @@ public class MedicinesController {
      */
     @GetMapping("getMedicinesById/{medicinesId}")
     @ApiOperation(value = "根据id查询药品信息表数据",notes = "根据id查询药品信息表数据")
+    @HystrixCommand
     public AjaxResult getMedicinesById(@PathVariable @Validated @NotNull(message = "药品信息表id不能为空") Long medicinesId){
         return AjaxResult.success("查询成功",this.medicinesService.getMedicinesById(medicinesId));
     }
@@ -79,6 +84,7 @@ public class MedicinesController {
     @Log(title = "更新药品信息表数据",businessType = BusinessType.UPDATE)
     @PutMapping("updateMedicines")
     @ApiOperation(value = "更新药品信息表数据数据",notes = "更新药品信息表数据")
+    @HystrixCommand
     public AjaxResult updateMedicines(@Validated MedicinesDto medicinesDto){
         //设置修改人
         medicinesDto.setSimpleUser(ShiroSecurityUtils.getCurrentSimpleUser());
@@ -94,6 +100,7 @@ public class MedicinesController {
     @Log(title = "删除药品信息表数据",businessType = BusinessType.DELETE)
     @DeleteMapping("deleteMedicinesByIds/{medicinesIds}")
     @ApiOperation(value = "根据id删除药品信息表数据",notes = "根据id删除药品信息表数据")
+    @HystrixCommand
     public AjaxResult deleteMedicinesByIds(@PathVariable @Validated @NotEmpty(message = "药品信息表id不能为空") Long[] medicinesIds){
         return AjaxResult.toAjax(this.medicinesService.deleteMedicinesByIds(medicinesIds));
     }
@@ -106,6 +113,7 @@ public class MedicinesController {
      */
     @GetMapping("selectAllMedicines")
     @ApiOperation(value = "查询所有可用的药品信息表",notes = "查询所有可用的药品信息表")
+    @HystrixCommand
     public AjaxResult selectAllMedicines(){
         return AjaxResult.success("查询成功",this.medicinesService.selectAllMedicines().getData());
     }
@@ -119,6 +127,7 @@ public class MedicinesController {
     @Log(title = "调整药品库存",businessType = BusinessType.UPDATE)
     @PostMapping("updateMedicinesStorage/{medicinesId}/{medicinesStockNum}")
     @ApiOperation(value = "调整药品库存",notes = "调整药品库存")
+    @HystrixCommand
     public AjaxResult updateMedicinesStorage( @PathVariable @Validated @NotNull(message = "药品id不能为空") Long medicinesId ,@PathVariable @Validated @NotNull(message = "药品库存量不能为空")  Long medicinesStockNum){
        return AjaxResult.toAjax(medicinesService.updateMedicinesStorage(medicinesId,medicinesStockNum));
     }

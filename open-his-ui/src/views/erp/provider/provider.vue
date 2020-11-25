@@ -9,8 +9,8 @@
       <el-form-item label="联系人" prop="contactName">
         <el-input v-model="queryParams.contactName" placeholder="请输入联系人名称" clearable size="small" style="width:180px" />
       </el-form-item>
-      <el-form-item label="供应商电话" prop="contactTel">
-        <el-input v-model="queryParams.contactTel" placeholder="请输入供应商电话" clearable size="small" style="width:180px" />
+      <el-form-item label="供应商电话或手机号" prop="contactTel" label-width="150px">
+        <el-input v-model="queryParams.contactTel" placeholder="请输入供应商电话" clearable size="small" style="width:200px" />
       </el-form-item>
       <el-form-item label="状态" prop="status">
         <el-select v-model="queryParams.status" placeholder="可用状态" clearable size="small" style="width:180px">

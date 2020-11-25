@@ -1,7 +1,9 @@
 package com.twofish.controller.erp;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.twofish.aspectj.annotation.Log;
 import com.twofish.aspectj.enums.BusinessType;
+import com.twofish.controller.BaseController;
 import com.twofish.dto.ProducterDto;
 import com.twofish.service.ProducterService;
 import com.twofish.utils.ShiroSecurityUtils;
@@ -28,10 +30,11 @@ import javax.validation.constraints.NotNull;
 @Log4j2
 @Api(value = "系统生产厂家表数据接口",tags = "生产厂家表数据接口")
 @RequestMapping("/erp/producter/")
-public class ProducterController {
+public class ProducterController extends BaseController {
 
     @Reference
     private ProducterService producterService;
+
 
     /**
      * 分页查询生产厂家表数据
@@ -40,6 +43,7 @@ public class ProducterController {
      */
     @GetMapping("listProducterForPage")
     @ApiOperation(value = "分页查询生产厂家表数据",notes = "生产厂家表数据分页")
+    @HystrixCommand
     public AjaxResult listProducterForPage(ProducterDto producterDto){
         DataGridView dataGridView = this.producterService.listProducterForPage(producterDto);
         return AjaxResult.success("查询成功",dataGridView.getData(),dataGridView.getTotal());
@@ -53,6 +57,7 @@ public class ProducterController {
     @Log(title = "添加生产厂家表数据",businessType = BusinessType.INSERT)
     @PostMapping("addProducter")
     @ApiOperation(value = "添加生产厂家表数据",notes = "添加生产厂家表数据")
+    @HystrixCommand
     public AjaxResult addProducter(@Validated ProducterDto producterDto){
         //设置添加人
         producterDto.setSimpleUser(ShiroSecurityUtils.getCurrentSimpleUser());
@@ -67,6 +72,7 @@ public class ProducterController {
      */
     @GetMapping("getProducterById/{producterId}")
     @ApiOperation(value = "根据id查询生产厂家表数据",notes = "根据id查询生产厂家表数据")
+    @HystrixCommand
     public AjaxResult getProducterById(@PathVariable @Validated @NotNull(message = "生产厂家表id不能为空") Long producterId){
         return AjaxResult.success("查询成功",this.producterService.getProducterById(producterId));
     }
@@ -79,6 +85,7 @@ public class ProducterController {
     @Log(title = "更新生产厂家表数据",businessType = BusinessType.UPDATE)
     @PutMapping("updateProducter")
     @ApiOperation(value = "更新生产厂家表数据数据",notes = "更新生产厂家表数据")
+    @HystrixCommand
     public AjaxResult updateProducter(@Validated ProducterDto producterDto){
         //设置修改人
         producterDto.setSimpleUser(ShiroSecurityUtils.getCurrentSimpleUser());
@@ -94,6 +101,7 @@ public class ProducterController {
     @Log(title = "删除生产厂家表数据",businessType = BusinessType.DELETE)
     @DeleteMapping("deleteProducterByIds/{producterIds}")
     @ApiOperation(value = "根据id删除生产厂家表数据",notes = "根据id删除生产厂家表数据")
+    @HystrixCommand
     public AjaxResult deleteProducterByIds(@PathVariable @Validated @NotEmpty(message = "生产厂家表id不能为空") Long[] producterIds){
         return AjaxResult.toAjax(this.producterService.deleteProducterByIds(producterIds));
     }
@@ -106,6 +114,7 @@ public class ProducterController {
      */
     @GetMapping("selectAllProducter")
     @ApiOperation(value = "查询所有可用的生产厂家表",notes = "查询所有可用的生产厂家表")
+    @HystrixCommand
     public AjaxResult selectAllProducter(){
         return AjaxResult.success("查询成功",this.producterService.selectAllProducter().getData());
     }

@@ -10,12 +10,13 @@ import com.twofish.mapper.MedicinesMapper;
 import com.twofish.service.MedicinesService;
 import com.twofish.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Service;
 
 import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
-@Service
+@Service(methods = {@Method(name = "addMedicines",retries = 0)})
 public class MedicinesServiceImpl  implements MedicinesService{
     @Resource
     private MedicinesMapper medicinesMapper;

@@ -68,8 +68,8 @@
       <div class="box">
         <div class="right">
           <div class="video">
-            <video id="video" width="300px" height="300px" autoplay="autoplay" />
-            <el-button ref="mybutton" style="margin-left:100px;margin-top:20px;" type="success" @click="openMedia">开始识别</el-button>
+            <video id="video" width="320px" height="240px" autoplay="autoplay" />
+            <el-button ref="mybutton" class="videobutton" style="margin-left:115px;margin-top:50px;" type="success" @click="openMedia">开始识别</el-button>
             <canvas id="canvas" hidden width="250px" height="250px" />
           </div>
         </div>
@@ -159,17 +159,32 @@ export default {
     },
     // 摄像头开启
     openMedia(){
-      let constraints = {
-              video: {width: 500, height: 500},
-              audio: true
-          };
-          //获得video摄像头区域
           let video = document.getElementById("video");
-          let promise = navigator.mediaDevices.getUserMedia(constraints);
-          promise.then(function (MediaStream) {
-              video.srcObject = MediaStream;
-              video.play();
-          });
+          var videoObj = {
+                    "video": true,
+                    "audio": true
+          },
+         errBack = function(error) {
+                    console.log("Video capture error: ", error.code);
+          };
+        if (navigator.getUserMedia) { // Standard 如果用户允许打开摄像头
+            //stream为读取的视频流
+            navigator.getUserMedia(videoObj, function(stream) {
+                video.srcObject = stream;
+                video.play();
+            }, errBack);
+        } else if (navigator.webkitGetUserMedia) { // WebKit-prefixed  根据不同的浏览器写法不同
+            navigator.webkitGetUserMedia(videoObj, function(stream) {
+                video.srcObject = window.webkitURL.createObjectURL(stream);
+                video.play();
+            }, errBack);
+        } else if (navigator.mozGetUserMedia) { // Firefox-prefixed
+            navigator.mozGetUserMedia(videoObj, function(stream) {
+                video.srcObject = window.URL.createObjectURL(stream);
+                video.play();
+            }, errBack);
+        }
+        //一直截图直到识别成功
         this.chatTimer = setInterval(() => {
            this.jiance();
         }, 1000);
@@ -202,8 +217,6 @@ export default {
         }).catch(()=>{
           console.log('识别失败');
         })
-       //返回结果中有一个face_token要存浏览器中，以后每次发请求携带face_token
-
       //关闭对话框，不截图
       if(this.showDialog===false){
           clearInterval(this.chatTimer);
@@ -254,32 +267,12 @@ export default {
         return acc
       }, {})
     }
-    // afterQRScan() {
-    //   if (e.key === 'x-admin-oauth-code') {
-    //     const code = getQueryObject(e.newValue)
-    //     const codeMap = {
-    //       wechat: 'code',
-    //       tencent: 'code'
-    //     }
-    //     const type = codeMap[this.auth_type]
-    //     const codeName = code[type]
-    //     if (codeName) {
-    //       this.$store.dispatch('LoginByThirdparty', codeName).then(() => {
-    //         this.$router.push({ path: this.redirect || '/' })
-    //       })
-    //     } else {
-    //       alert('第三方登录失败')
-    //     }
-    //   }
-    // }
+
   }
 }
 </script>
 
 <style lang="scss">
-
-/* 修复input 背景不协调 和光标变色 */
-/* Detail see https://github.com/PanJiaChen/vue-element-admin/pull/927 */
 
 $bg:#283443;
 $light_gray:#fff;
@@ -320,8 +313,8 @@ $cursor: #fff;
 
     }
     .video{
-      width:300px;
-      height:300px;
+      width:320px;
+      height:240px;
       margin:auto;
       background:no-repeat url('../../assets/bgimg/rlsb.jpg');
       background-size: 100% 100%;
@@ -417,7 +410,28 @@ $light_gray:#eee;
 
   @media only screen and (max-width: 470px) {
     .thirdparty-button {
-      display: none;
+
+    }
+    .thirdLogin{
+      margin-top: -50px;
+      margin-left: -95px;
+      width:600px;
+      height: 90%;
+
+    }
+    .box{
+        width:150px;
+    }
+    .video{
+      width:240px !important;
+      margin-left: 10px ;
+    }
+    .socialLogin{
+      bottom: 60px;
+    }
+    .videobutton{
+
+      margin-left: 70px !important;
     }
   }
 }

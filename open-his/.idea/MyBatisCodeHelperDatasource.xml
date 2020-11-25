@@ -4,8 +4,6 @@
     <option name="projectProfile">
       <ProjectProfile>
         <option name="deleteByPrimayKeyEnabled" value="false" />
-        <option name="generateService" value="true" />
-        <option name="generateServiceInterface" value="true" />
         <option name="insertMethodEnabled" value="false" />
         <option name="insertSelectiveMethodEnabled" value="false" />
         <option name="javaMapperPackage" value="com.twofish.mapper" />
@@ -26,10 +24,6 @@
                   <option name="javaMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-mapper\src\main\java" />
                   <option name="javaModelPacakge" value="com.twofish.domain" />
                   <option name="javaModelPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-domain\src\main\java" />
-                  <option name="javaServiceInterfacePackage" value="com.twofish.service" />
-                  <option name="javaServiceInterfacePath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-api\src\main\java" />
-                  <option name="javaServicePackage" value="com.twofish.service.impl" />
-                  <option name="javaServicePath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-service\src\main\java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-mapper\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
@@ -102,6 +96,42 @@
                   <option name="insertMethodEnabled" value="false" />
                   <option name="insertSelectiveMethodEnabled" value="false" />
                   <option name="javaModelName" value="Provider" />
+                  <option name="moduleName" value="his-erp" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:stock_purchase">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Purchase" />
+                  <option name="moduleName" value="his-erp" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:stock_purchase_item">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="PurchaseItem" />
                   <option name="moduleName" value="his-erp" />
                   <option name="selectByPrimaryKeyEnabled" value="false" />
                   <option name="sequenceColumn" value="" />
