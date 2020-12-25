@@ -45,7 +45,7 @@
         <el-button type="danger" icon="el-icon-delete" size="mini" :disabled="single" @click="handleDoInvalid">作废</el-button>
       </el-col>
       <el-col :span="1.5">
-        <el-button type="success" icon="el-icon-edit" size="mini" :disabled="single" @click="alert('提交入库')">提交入库</el-button>
+        <el-button type="success" icon="el-icon-edit" size="mini" :disabled="single" @click="handleDoInventory">提交入库</el-button>
       </el-col>
 
     </el-row>
@@ -56,7 +56,8 @@
       <el-table-column type="selection" width="55" align="center" />
       <el-table-column prop="purchaseId" label="单据ID" align="center">
         <template slot-scope="scope">
-          <router-link to="/" class="link-type">
+          <!-- 去到修改单据页面，和新增单据页面相似 -->
+          <router-link :to="'/stock/editpurchase/'+scope.row.purchaseId" class="link-type">
             <span>{{ scope.row.purchaseId }}</span>
           </router-link>
         </template>
@@ -67,6 +68,7 @@
       <el-table-column prop="applyUserName" label="申请人" align="center" width="130px" />
       <el-table-column prop="storageOptUser" label="入库操作人" align="center" width="130px" />
       <el-table-column prop="storageOptTime" label="入库时间" align="center" />
+      <el-table-column prop="examine" label="审核信息" align="center" />
       <el-table-column label="创建时间" prop="createTime" align="center" width="180" />
     </el-table>
     <!-- 数据表格结束 -->
@@ -86,7 +88,7 @@
   </div>
 </template>
 <script>
-import { listPurchaseForPage, doAudit, doInvalid } from '@/api/erp/purchase/purchase'
+import { listPurchaseForPage, doAudit, doInvalid, doInventory } from '@/api/erp/purchase/purchase'
 import { selectAllProvider } from '@/api/erp/provider/provider'
 export default {
   data() {
@@ -181,7 +183,7 @@ export default {
     },
     // 新增采购
     handleAddPurchase() {
-
+      this.$router.push('/stock/addpurchase')
     },
     // 提交审核
     handleDoAudit() {
@@ -218,8 +220,25 @@ export default {
       }).catch(() => {
         this.msgInfo('取消作废!')
       })
-    }
+    },
     // 提交入库
+    handleDoInventory() {
+      const purchaseId = this.ids[0]
+      this.$confirm('是否将ID为【' + purchaseId + '】的采购单据提交入库?', '入库', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'success'
+      }).then(() => {
+        doInventory(purchaseId).then(() => {
+          this.msgSuccess('入库成功!')
+          this.getStockPurchaseList()
+        }).catch(() => {
+          this.msgError('入库失败!')
+        })
+      }).catch(() => {
+        this.msgInfo('取消入库!')
+      })
+    }
 
   }
 }

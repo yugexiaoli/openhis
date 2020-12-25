@@ -294,6 +294,17 @@ export const asyncRoutes = [
         component: () => import('@/views/erp/purchase/purchase'),
         name: '/stock/purchase',
         meta: { title: '采购入库列表', icon: 'list' }
+      }, {
+        path: 'addpurchase',
+        component: () => import('@/views/erp/purchase/newpurchase'),
+        name: '/stock/addpurchase',
+        meta: { title: '新增采购', icon: 'edit' }
+      },
+      {
+        path: 'editpurchase/:purchaseId',
+        component: () => import('@/views/erp/purchase/editpurchase'),
+        name: '/stock/editpurchase',
+        meta: { title: '修改采购', icon: 'edit' }
       },
       {
         path: 'examine',
@@ -303,7 +314,7 @@ export const asyncRoutes = [
       },
       {
         path: 'inventory',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/erp/purchase/inventoryLog'),
         name: '/stock/inventory',
         meta: { title: '库存查询', icon: 'list' }
       }
@@ -417,7 +428,7 @@ export const asyncRoutes = [
       },
       {
         path: 'scheduling',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/doctor/scheduling/scheduling'),
         name: '/doctor/scheduling',
         meta: { title: '医生排班', icon: 'list' }
       },

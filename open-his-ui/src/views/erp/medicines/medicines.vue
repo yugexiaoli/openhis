@@ -295,10 +295,10 @@ export default {
       // 表单校验
       rules: {
         medicinesName: [
-          { required: true, message: '不能为空', trigger: 'blur' }
+          { required: true, message: '药品名称不能为空', trigger: 'blur' }
         ],
         keywords: [
-          { required: true, message: '不能为空', trigger: 'blur' }
+          { required: true, message: '关键词不能为空', trigger: 'blur' }
         ]
       }
     }

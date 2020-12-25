@@ -14,34 +14,130 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4cedbdc-7988-4eb5-be06-3652a390af02" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/PurchaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/Purchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/PurchaseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/PurchaseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/PurchaseItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/PurchaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/PurchaseItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/PurchaseMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/PurchaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/PurchaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/InventoryLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/InventoryLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/InventoryLogDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/PurchaseFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/PurchaseItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/InventoryLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/InventoryLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/InventoryLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/InventoryLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/01-第九章-补充整理.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/02-第九章-阿里云部署.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/03-第九章-Yaip的搭建和使用.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/api.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/dashboard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/dubbo+zookeeper/dubbo-admin-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/dubbo+zookeeper/zookeeper-3.4.14.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/nginx/nginx-1.14.2.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/app.c10237f3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-052a0056.8b79ea20.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-05a99c67.b1dd7a76.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-076d521c.5c83702a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-0876c0b2.b6196c5f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-0c245cac.d77b408e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-1902944a.640e44dc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-1f26f98c.936f8ebe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-2ba9f81e.8b9f25cd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-3886abd3.1e1b2837.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-405a14db.e69a276e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-44e529cc.251fdb5c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-451e9cdc.7606f894.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-4c31d3d2.2bb254ba.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-4dd28fc8.02f29e6e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-53c81c80.a4fb595f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-5451e56c.c67a304e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-556562e8.13a7e89e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-88bd1d5a.dcc665da.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-919ff230.bca037a2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-9e5fc220.84f98409.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-a2cd6ed2.de0c4013.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-a815cf0c.0d2126a1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-ace8e3e6.d40b94e9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-bab5edb6.db14bc0c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-e008b004.2fe1df31.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-libs.3dfb7769.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/fonts/element-icons.535877f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/fonts/element-icons.732389de.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/401.089007e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/404.a57b6f31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/404_cloud.0f4bc32b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/dashboard.b1fabce4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/tui-editor-2x.b4361244.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/tui-editor.30dd0f52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/app.a1b428c0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-01c0f366.234d180c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-052a0056.59331c1c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-05a99c67.b51e0843.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-076d521c.e9e84602.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-0876c0b2.d1c69763.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-0c245cac.1afcf67c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-105c5878.5ba9bd4f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-12577e7d.9f9265e8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-1902944a.02570eec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-1b14706b.1ecb4001.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-1f26f98c.073fce9c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-282440f1.719ec168.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2ba9f81e.fa1c0a07.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d0126c1.0c53b36b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d0b1626.b6717585.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d0cfb23.7d4e2a31.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d2105d3.b54ad484.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d2109c1.8edf7b15.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d21eb82.a21163f8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d230fe7.19def69d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3886abd3.e997035c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3b0424d2.b4b87d42.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3b69bc00.75d6c640.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3caf3323.735ebb40.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-405a14db.471a4900.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-41b4d629.9b3b879d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-44e529cc.9e280aa5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-451e9cdc.a0267339.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-4c31d3d2.5b8b8dde.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-4dd28fc8.b9d0dbc9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-4eff967a.9f88217d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-53c81c80.b2a214c4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-5451e56c.52d42c9d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-556562e8.31a47902.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-5de4f646.163eda0e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-64c68d45.bef08aaa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-747632df.2f63e354.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-88bd1d5a.f2851263.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-919ff230.b0fed447.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-9e5fc220.fec6474a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-a2cd6ed2.be1ed9ee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-a815cf0c.a563902f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-ace8e3e6.70d801b9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-bab5edb6.7ce7fea6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-d19c1a98.71252001.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-e008b004.27d7fa76.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-ee7798a2.f97c94d6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-elementUI.eaba838c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-libs.e5014b3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/nginx-1.14.2.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/erp/purchase/purchase.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/erp/purchase/purchase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/system/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/system/user/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/provider/provider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/provider/provider.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/MedicinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/MedicinesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/ProducterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/ProducterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/ProviderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/ProviderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/MedicinesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/MedicinesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/ProducterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/ProducterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/ProviderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/ProviderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/SystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/SystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/MedicinesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/MedicinesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/ProducterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/ProducterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/ProviderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/ProviderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/SystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/SystemApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/MedicinesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/MedicinesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/ProducterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/ProducterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/ProviderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/medicines/medicines.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/medicines/medicines.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/pending.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/pending.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/purchase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/purchase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/user/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/user/user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/IdGeneratorSnowflake.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/IdGeneratorSnowflake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/constants/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/constants/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/utils/IdGeneratorSnowflake.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/utils/IdGeneratorSnowflake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/PurchaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/twofish/service/PurchaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/twofish/service/PurchaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/PurchaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/PurchaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/PurchaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/PurchaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/PurchaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/PurchaseController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +191,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/config" />
+    <property name="last_opened_file_path" value="D:/IDEA项目/springcloud" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -110,11 +206,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.twofish.controller.erp" />
+      <recent name="com.twofish.dto" />
       <recent name="com.twofish.domain" />
       <recent name="com.twofish.generator" />
       <recent name="com.twofish.mapper" />
-      <recent name="com.twofish.service.impl" />
-      <recent name="com.twofish.controller.system" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-commons\src\main\java\com\twofish\config" />
@@ -131,7 +227,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ErpApplication">
+  <component name="RunManager" selected="Spring Boot.SystemApplication">
+    <configuration name="IdGeneratorSnowflake" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.twofish.utils.IdGeneratorSnowflake" />
+      <module name="his-commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twofish.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoctorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="doctor-service" />
       <extension name="coverage">
@@ -185,15 +294,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.DoctorApplication" />
-      <item itemvalue="Spring Boot.ErpApplication" />
-      <item itemvalue="Spring Boot.StatisticsApplication" />
+      <item itemvalue="Application.IdGeneratorSnowflake" />
       <item itemvalue="Spring Boot.SystemApplication" />
+      <item itemvalue="Spring Boot.DoctorApplication" />
+      <item itemvalue="Spring Boot.StatisticsApplication" />
+      <item itemvalue="Spring Boot.ErpApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SystemApplication" />
         <item itemvalue="Spring Boot.ErpApplication" />
+        <item itemvalue="Application.IdGeneratorSnowflake" />
         <item itemvalue="Spring Boot.StatisticsApplication" />
         <item itemvalue="Spring Boot.DoctorApplication" />
       </list>
@@ -248,6 +359,16 @@
       <workItem from="1606220169029" duration="6420000" />
       <workItem from="1606283604184" duration="6664000" />
       <workItem from="1606293295661" duration="2965000" />
+      <workItem from="1606471479513" duration="3817000" />
+      <workItem from="1606732991373" duration="12236000" />
+      <workItem from="1606876770637" duration="1156000" />
+      <workItem from="1606911390481" duration="5158000" />
+      <workItem from="1607077162891" duration="1368000" />
+      <workItem from="1607139782495" duration="1316000" />
+      <workItem from="1607323177641" duration="5321000" />
+      <workItem from="1607438160410" duration="262000" />
+      <workItem from="1608832845582" duration="1483000" />
+      <workItem from="1608900918627" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="server second commit&#10;ccy&#10;2020/0/31">
       <created>1604078368190</created>
@@ -328,10 +449,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="528" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604174374148" />
-    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1605855895441">
+    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1607394757083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605855895441" />
+    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607394757083" />
     <state x="909" y="386" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603834588065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -360,42 +481,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="134" y="134" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604100512651" />
-    <state x="906" y="299" key="FileChooserDialogImpl" timestamp="1605930300499">
+    <state x="906" y="299" key="FileChooserDialogImpl" timestamp="1608900939056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="906" y="299" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605930300499" />
-    <state width="1393" height="213" key="GridCell.Tab.0.bottom" timestamp="1606319405589">
+    <state x="906" y="299" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608900939056" />
+    <state width="1466" height="220" key="GridCell.Tab.0.bottom" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
-    <state width="1393" height="213" key="GridCell.Tab.0.center" timestamp="1606319405589">
+    <state width="1466" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.0.center" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
-    <state width="1393" height="213" key="GridCell.Tab.0.left" timestamp="1606319405588">
+    <state width="1466" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.0.left" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405588" />
-    <state width="1393" height="213" key="GridCell.Tab.0.right" timestamp="1606319405589">
+    <state width="1466" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.0.right" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
-    <state width="1393" height="213" key="GridCell.Tab.1.bottom" timestamp="1606319405589">
+    <state width="1466" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.1.bottom" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
-    <state width="1393" height="213" key="GridCell.Tab.1.center" timestamp="1606319405589">
+    <state width="1466" height="220" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.1.center" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
-    <state width="1393" height="213" key="GridCell.Tab.1.left" timestamp="1606319405589">
+    <state width="1466" height="220" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.1.left" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
-    <state width="1393" height="213" key="GridCell.Tab.1.right" timestamp="1606319405589">
+    <state width="1466" height="220" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
+    <state width="1466" height="220" key="GridCell.Tab.1.right" timestamp="1608890946800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1393" height="213" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606319405589" />
+    <state width="1466" height="220" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
     <state width="1614" height="278" key="GridCell.Tab.2.bottom" timestamp="1606286479460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -444,10 +565,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1023" y="530" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605312514980" />
-    <state x="731" y="202" width="1100" height="692" key="new project wizard" timestamp="1603742772885">
+    <state x="731" y="202" width="1100" height="692" key="new project wizard" timestamp="1607438433857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="731" y="202" width="1100" height="692" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603742772885" />
+    <state x="731" y="202" width="1100" height="692" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607438433857" />
     <state x="1038" y="247" key="run.anything.popup" timestamp="1605815960355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

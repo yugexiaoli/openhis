@@ -65,4 +65,9 @@ export function saveUserRole(userId, roleIds) {
     method: 'post'
   })
 }
-
+export function getUsersNeedScheduling() {
+  return request({
+    url: baseurl + 'getUsersNeedScheduling',
+    method: 'get'
+  })
+}

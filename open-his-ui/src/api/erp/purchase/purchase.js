@@ -50,3 +50,38 @@ export function getPurchaseItemById(purchaseId) {
     method: 'get'
   })
 }
+
+// ========
+export function doInventory(purchaseId) {
+  return request({
+    url: baseurl + 'doInventory/' + purchaseId,
+    method: 'post'
+  })
+}
+
+export function addPurchase(data) {
+  return request({
+    url: baseurl + 'addPurchase',
+    method: 'post',
+    data: data
+  })
+}
+export function queryPurchaseAndItemByPurchaseId(purchaseId) {
+  return request({
+    url: baseurl + 'queryPurchaseAndItemByPurchaseId/' + purchaseId,
+    method: 'get'
+  })
+}
+export function addPurchaseToAudit(data) {
+  return request({
+    url: baseurl + 'addPurchaseToAudit',
+    method: 'post',
+    data: data
+  })
+}
+export function generatePurchaseId() {
+  return request({
+    url: baseurl + 'generatePurchaseId',
+    method: 'get'
+  })
+}

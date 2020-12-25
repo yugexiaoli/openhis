@@ -127,5 +127,8 @@ public interface Constants {
     String LOGIN_TYPE_SYSTEM = "0" ;
     String LOGIN_TYPE_PATIENT = "1" ;
 
-
+    /**
+     * ID前缀
+     */
+    String ID_PROFIX_CG="CG";
 }

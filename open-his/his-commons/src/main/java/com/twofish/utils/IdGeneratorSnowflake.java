@@ -18,8 +18,8 @@ public class IdGeneratorSnowflake {
 
     static {
         try {
-            workId = NetUtil.ipv4ToLong(NetUtil.getLocalhostStr());
-            log.info("当前机器的工作ID为:" + workId);
+            //workId = NetUtil.ipv4ToLong(NetUtil.getLocalhostStr());
+            //log.info("当前机器的工作ID为:" + workId);
             snowflake=IdUtil.createSnowflake(workId, datacenterId);
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,6 +40,10 @@ public class IdGeneratorSnowflake {
      */
     public static String generatorIdWithProfix(String profix) {
         return profix + snowflakeId();
+    }
+
+    public static void main(String[] args) {
+        System.out.println("id"+generatorIdWithProfix("CG"));
     }
 }
 

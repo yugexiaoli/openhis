@@ -41,6 +41,9 @@
       <el-col :span="1.5">
         <el-button type="danger" icon="el-icon-delete" size="mini" :disabled="single" @click="handleAuditNoPass">审核不通过</el-button>
       </el-col>
+      <el-col :span="1.5">
+        <el-button type="success" icon="el-icon-edit" size="mini" :disabled="single" @click="handlePurchaseItem">查看详情</el-button>
+      </el-col>
     </el-row>
     <!-- 表头按钮结束 -->
 
@@ -49,7 +52,8 @@
       <el-table-column type="selection" width="55" align="center" />
       <el-table-column prop="purchaseId" label="单据ID" align="center">
         <template slot-scope="scope">
-          <router-link to="/" class="link-type">
+          <!-- 去到修改单据页面，和新增单据页面相似 -->
+          <router-link :to="'/stock/editpurchase/'+scope.row.purchaseId" class="link-type">
             <span>{{ scope.row.purchaseId }}</span>
           </router-link>
         </template>
@@ -75,11 +79,35 @@
       @current-change="handleCurrentChange"
     />
     <!-- 分页组件结束 -->
-
+    <!-- 查看单据详情弹出层开始 -->
+    <el-dialog
+      :title="title"
+      :visible.sync="open"
+      width="1068px"
+    >
+      <el-table
+        v-loading="taleloading"
+        :data="purchseItemData"
+        border
+        empty-text="数据加载中。。"
+      >
+        <el-table-column property="itemId" label="详情ID" width="180px" />
+        <el-table-column property="purchaseId" label="采购单据ID" width="200px" />
+        <el-table-column property="medicinesName" label="药品名称" width="auto" />
+        <el-table-column property="purchaseNumber" label="采购数量" />
+        <el-table-column property="tradePrice" label="批发价" />
+        <el-table-column property="tradeTotalAmount" label="批发额" />
+        <el-table-column property="batchNumber" label="批次号" />
+        <el-table-column property="conversion" label="换算量" />
+        <el-table-column property="unit" label="单位" />
+        <el-table-column property="remark" label="备注" />
+      </el-table>
+    </el-dialog>
+    <!-- 查看单据详情弹出层结束 -->
   </div>
 </template>
 <script>
-import { listPurchasePendingForPage, auditPass, auditNoPass } from '@/api/erp/purchase/purchase'
+import { listPurchasePendingForPage, auditPass, auditNoPass, getPurchaseItemById } from '@/api/erp/purchase/purchase'
 import { selectAllProvider } from '@/api/erp/provider/provider'
 export default {
   data() {
@@ -94,6 +122,14 @@ export default {
       multiple: true,
       // 总条数
       total: 0,
+      // 弹出层是否开启
+      open: false,
+      // 弹出层标题
+      title: undefined,
+      // 表格加载
+      taleloading: false,
+      // 单据详情数据
+      purchseItemData: [],
       // 字典数据表格数据
       purchaseTableList: [],
       // 状态数据字典
@@ -210,8 +246,18 @@ export default {
           message: '取消回绝'
         })
       })
+    },
+    // 查看详情
+    handlePurchaseItem() {
+      this.taleloading = true
+      this.open = true
+      const purchaseId = this.ids[0]
+      this.title = '单据ID为【' + purchaseId + '】的详情信息'
+      getPurchaseItemById(purchaseId).then(res => {
+        this.purchseItemData = res.data
+        this.taleloading = false
+      })
     }
-
   }
 }
 </script>

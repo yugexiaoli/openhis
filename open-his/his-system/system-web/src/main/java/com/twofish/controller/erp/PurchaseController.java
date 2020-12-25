@@ -8,7 +8,9 @@ import com.twofish.controller.BaseController;
 import com.twofish.domain.Purchase;
 import com.twofish.domain.PurchaseItem;
 import com.twofish.dto.PurchaseDto;
+import com.twofish.dto.PurchaseFormDto;
 import com.twofish.service.PurchaseService;
+import com.twofish.utils.IdGeneratorSnowflake;
 import com.twofish.utils.ShiroSecurityUtils;
 import com.twofish.vo.AjaxResult;
 import com.twofish.vo.DataGridView;
@@ -18,13 +20,16 @@ import lombok.extern.log4j.Log4j2;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
  *
  * 采购单据信息接口
  * @author ccy
+ * @data: 2020-3-16
  *
  */
 @RestController
@@ -162,7 +167,134 @@ public class PurchaseController extends BaseController {
         return AjaxResult.success(list);
     }
 
+    /**********************************/
 
+    /**
+     * 生成采购单ID
+     * @return
+     */
+    @GetMapping("generatePurchaseId")
+    @ApiOperation(value = "生成采购单ID",tags = "生成采购单ID")
+    public AjaxResult generatePurchaseId(){
+        return AjaxResult.success(IdGeneratorSnowflake.generatorIdWithProfix(Constants.ID_PROFIX_CG));
+    }
+
+
+    /**
+     * 暂存采购单和详情信息
+     * 可能是添加也可能是修改
+     * 添加就做插入操作，修改就先把单据和详情数据删掉再插入
+     * @param purchaseFormDto
+     * @return
+     */
+    @PostMapping("addPurchase")
+    @ApiOperation(value = "暂存采购单和详情信息",notes = "暂存采购单和详情信息")
+    @Log(title = "暂存采购单和详情信息",businessType = BusinessType.INSERT)
+    @HystrixCommand
+    public AjaxResult addPurchase(@RequestBody PurchaseFormDto purchaseFormDto){
+        String purchaseId = purchaseFormDto.getPurchaseDto().getPurchaseId();
+        if(!checkPurchase(purchaseFormDto)){
+            //表示状态不是1未提交，或者4审核失败，不能修改
+            return AjaxResult.fail("单据【"+purchaseId+"】的状态不是未提交，或者审核失败，不能修改");
+        }
+        //做修改或添加单据
+        return AjaxResult.toAjax(this.purchaseService.addPurchase(purchaseFormDto,ShiroSecurityUtils.getCurrentSimpleUser()));
+    }
+
+    /**
+     * 添加采购单和详情并提交审核
+     * 可能是添加也可能是修改
+     * 添加就做插入操作，修改就先把单据和详情数据删掉再插入
+     * @param purchaseFormDto
+     * @return
+     */
+    @PostMapping("addPurchaseToAudit")
+    @ApiOperation(value = "添加采购单和详情并提交审核",notes = "添加采购单和详情并提交审核")
+    @Log(title = "添加采购单和详情并提交审核",businessType = BusinessType.INSERT)
+    @HystrixCommand
+    public AjaxResult addPurchaseToAudit(@RequestBody PurchaseFormDto purchaseFormDto){
+        String purchaseId = purchaseFormDto.getPurchaseDto().getPurchaseId();
+        if(!checkPurchase(purchaseFormDto)){
+            //表示状态不是1未提交，或者4审核失败，不能修改
+            return AjaxResult.fail("单据【"+purchaseId+"】的状态不是未提交，或者审核失败，不能提交审核");
+        }
+        //做修改或添加单据
+        return AjaxResult.toAjax(this.purchaseService.addPurchaseToAudit(purchaseFormDto,ShiroSecurityUtils.getCurrentSimpleUser()));
+    }
+
+
+    /**
+     * 根据采购单号查询采购单信息和详情信息
+     * @param purchaseId
+     * @return
+     */
+    @GetMapping("queryPurchaseAndItemByPurchaseId/{purchaseId}")
+    @ApiOperation(value = "根据采购单号查询采购单信息和详情信息",notes = "根据采购单号查询采购单信息和详情信息")
+    @HystrixCommand
+    public AjaxResult queryPurchaseAndItemByPurchaseId(@PathVariable("purchaseId") String purchaseId){
+        //查询采购单
+        Purchase purchase = this.purchaseService.queryPurchaseById(purchaseId);
+        if(null==purchase){
+            //采购单不存在
+            return AjaxResult.fail("采购单【"+purchaseId+"】不存在");
+        }
+        //采购单存在，继续查详情信息，并且将两个信息装到map集合返回出去
+        List<PurchaseItem> purchaseItems = this.purchaseService.getPurchaseItemById(purchaseId);
+        Map<String,Object> map=new HashMap<>();
+        map.put("purchase",purchase);
+        map.put("items",purchaseItems);
+        return AjaxResult.success(map);
+    }
+
+
+
+
+    /**
+     * 入库【根据采购单号】
+     * 要求：1,状态必须是 3，审核通过才能入库
+     *      2,要修改药品的库存
+     * @param purchaseId
+     * @return
+     */
+    @PostMapping("doInventory/{purchaseId}")
+    @ApiOperation(value = "入库",notes = "入库")
+    @Log(title = "入库",businessType = BusinessType.INSERT)
+    @HystrixCommand
+    public AjaxResult doInventory(@PathVariable("purchaseId") String purchaseId){
+        Purchase purchase = this.purchaseService.queryPurchaseById(purchaseId);
+        if(purchase.getStatus().equals(Constants.STOCK_PURCHASE_STATUS_6)){
+            //状态已经为入库成功，不能重复入库
+            return AjaxResult.fail("不能重复入库");
+        }else if (!purchase.getStatus().equals(Constants.STOCK_PURCHASE_STATUS_3)){
+            //状态不是为审核通过，不能入库
+            return AjaxResult.fail("状态不是为审核通过，不能入库");
+        }else {
+            //状态为3，审核通过，可入库
+            return AjaxResult.toAjax(this.purchaseService.doInventory(purchaseId,ShiroSecurityUtils.getCurrentSimpleUser()));
+        }
+    }
+
+
+
+    /**
+     * 用于添加单据或修改单据判断：
+     * 只能是添加或者修改单据才能进入暂存
+     * @param purchaseFormDto
+     * @return
+     */
+    public Boolean checkPurchase(PurchaseFormDto purchaseFormDto){
+        String purchaseId = purchaseFormDto.getPurchaseDto().getPurchaseId();
+        Purchase purchase = this.purchaseService.queryPurchaseById(purchaseId);
+        if(purchase==null){
+            //做添加
+            return true;
+        }
+        //做修改，修改状态必须是1未提交，或者4审核失败，才能修改
+        if(purchase.getStatus().equals(Constants.STOCK_PURCHASE_STATUS_1)||purchase.getStatus().equals(Constants.STOCK_PURCHASE_STATUS_4)){
+            return true;
+        }
+        return false; //表示状态不是1未提交，或者4审核失败，不能修改
+    }
 
 
 
