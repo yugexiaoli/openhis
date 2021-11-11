@@ -73,12 +73,18 @@ public class MedicinesServiceImpl  implements MedicinesService{
         qw.eq(Medicines.COL_STATUS, Constants.STATUS_TRUE);
         return new DataGridView(null,this.medicinesMapper.selectList(qw));
     }
-
     @Override
     public int updateMedicinesStorage(Long medicinesId, Long medicinesStockNum) {
         if(medicinesId !=null && medicinesStockNum !=null){
             return this.medicinesMapper.updateMedicinesByIdAndNum(medicinesId,medicinesStockNum);
         }
         return -1;
+    }
+
+    @Override
+    public List<Medicines> queryMedicinesByName(String search) {
+        QueryWrapper<Medicines> qw = new QueryWrapper<>();
+        qw.like(StringUtils.isNotBlank(search),Medicines.COL_MEDICINES_NAME,search);
+        return this.medicinesMapper.selectList(qw);
     }
 }

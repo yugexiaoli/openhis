@@ -1,7 +1,6 @@
 package com.twofish.service;
 
 import com.twofish.domain.User;
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.twofish.dto.UserDto;
 import com.twofish.vo.DataGridView;
 
@@ -91,9 +90,16 @@ public interface UserService {
     void saveUserRole(Long userId, Long[] roleIds);
 
     /**
-     * 查询需要排班的医生信息
+     * 查询需要排班的医生信息(弃用)
      * @return
      */
     List<User> getUsersNeedScheduling();
 
+    /**
+     * 查询要排版的医生信息(根据用户id和部门id,状态可用)
+     * @param userId
+     * @param deptId
+     * @return
+     */
+    List<User> queryUsersNeedScheduling(Long userId, Long deptId);
 }

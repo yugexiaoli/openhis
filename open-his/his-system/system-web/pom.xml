@@ -186,6 +186,12 @@
             <version>2.2.1.RELEASE</version>
         </dependency>
 
+        <!--  dubbo调用docter依赖-->
+        <dependency>
+            <groupId>com.twofish</groupId>
+            <artifactId>doctor-api</artifactId>
+            <version>1.0</version>
+        </dependency>
 
     </dependencies>
 

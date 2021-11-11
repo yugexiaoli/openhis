@@ -4,6 +4,8 @@ import com.twofish.domain.Dept;
 import com.twofish.dto.DeptDto;
 import com.twofish.vo.DataGridView;
 
+import java.util.List;
+
 public interface DeptService {
 
     /**
@@ -46,4 +48,13 @@ public interface DeptService {
      * @return
      */
     DataGridView selectAllDept();
+
+    //再根据部门id集合查询部门表，查出部门集合
+    List<Dept> queryDeptByIds(List<Long> deptIds);
+
+    //根据一个科室id查询一个科室
+    Dept getOne(Long deptId);
+
+    //更新科室的号数
+    void updateDeptbyDeptId(Long deptId, Integer registrationNumber);
 }

@@ -49,3 +49,10 @@ export function updateMedicinesStorage(medicinesId, medicinesStockNum) {
     method: 'post'
   })
 }
+// 药品名称模糊查询
+export function searchMedicinesByName(name) {
+  return request({
+    url: baseurl + 'searchMedicinesByName/' + name,
+    method: 'get'
+  })
+}

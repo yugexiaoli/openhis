@@ -14,10 +14,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.validation.constraints.NotNull;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 
 /**
@@ -78,6 +74,7 @@ public class UserController {
      * @param userId
      * @return
      */
+//    @Scheduled(cron = "{ }")
     @GetMapping("getUserById/{userId}")
     @ApiOperation(value = "根据用户ID查询用户信息",notes = "根据用户ID查询用户信息")
     public AjaxResult getUserById(@PathVariable Long userId){

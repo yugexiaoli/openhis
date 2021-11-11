@@ -404,25 +404,25 @@ export const asyncRoutes = [
     children: [
       {
         path: 'registered',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/doctor/registration/index'),
         name: '/doctor/registered',
         meta: { title: '门诊挂号', icon: 'list' }
       },
       {
         path: 'registeredlist',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/doctor/registration/list'),
         name: '/doctor/registeredlist',
         meta: { title: '挂号列表', icon: 'list' }
       },
       {
         path: 'newcare',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/doctor/care/index'),
         name: '/doctor/newcare',
         meta: { title: '新开就诊', icon: 'list' }
       },
       {
         path: 'myscheduling',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/doctor/scheduling/myscheduling'),
         name: '/doctor/myscheduling',
         meta: { title: '我的排班', icon: 'list' }
       },
@@ -434,7 +434,7 @@ export const asyncRoutes = [
       },
       {
         path: 'patient',
-        component: () => import('@/views/error-page/404'),
+        component: () => import('@/views/doctor/patient/index'),
         name: '/doctor/patient',
         meta: { title: '患者库', icon: 'list' }
       }

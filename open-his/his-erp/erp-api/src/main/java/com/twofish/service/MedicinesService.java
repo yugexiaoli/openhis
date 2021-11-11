@@ -4,6 +4,8 @@ import com.twofish.domain.Medicines;
 import com.twofish.dto.MedicinesDto;
 import com.twofish.vo.DataGridView;
 
+import java.util.List;
+
 public interface MedicinesService {
 
     /**
@@ -54,4 +56,7 @@ public interface MedicinesService {
      * @return
      */
     int updateMedicinesStorage(Long medicinesId, Long medicinesStockNum);
+
+    //根据处方名称模糊查询处方
+    List<Medicines> queryMedicinesByName(String search);
 }

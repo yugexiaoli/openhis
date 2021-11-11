@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.twofish.mapper.PatientMapper">
+  <resultMap id="BaseResultMap" type="com.twofish.domain.Patient">
+    <!--@mbg.generated-->
+    <!--@Table his_patient-->
+    <id column="patient_id" jdbcType="VARCHAR" property="patientId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="sex" jdbcType="CHAR" property="sex" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="id_card" jdbcType="CHAR" property="idCard" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="allergy_info" jdbcType="VARCHAR" property="allergyInfo" />
+    <result column="is_final" jdbcType="CHAR" property="isFinal" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="last_login_ip" jdbcType="VARCHAR" property="lastLoginIp" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    patient_id, `name`, phone, sex, birthday, id_card, address, allergy_info, is_final, 
+    `password`, openid, last_login_ip, last_login_time, create_time, update_time
+  </sql>
+</mapper>

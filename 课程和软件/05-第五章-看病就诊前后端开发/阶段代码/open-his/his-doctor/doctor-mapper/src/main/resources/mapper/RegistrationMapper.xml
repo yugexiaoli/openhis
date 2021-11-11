@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.RegistrationMapper">
+  <resultMap id="BaseResultMap" type="com.bjsxt.domain.Registration">
+    <!--@mbg.generated-->
+    <!--@Table his_registration-->
+    <id column="reg_id" jdbcType="VARCHAR" property="regId" />
+    <result column="patient_id" jdbcType="VARCHAR" property="patientId" />
+    <result column="patient_name" jdbcType="VARCHAR" property="patientName" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="doctor_name" jdbcType="VARCHAR" property="doctorName" />
+    <result column="dept_id" jdbcType="BIGINT" property="deptId" />
+    <result column="reg_item_id" jdbcType="BIGINT" property="regItemId" />
+    <result column="reg_item_amount" jdbcType="DECIMAL" property="regItemAmount" />
+    <result column="reg_number" jdbcType="INTEGER" property="regNumber" />
+    <result column="reg_status" jdbcType="CHAR" property="regStatus" />
+    <result column="visit_date" jdbcType="VARCHAR" property="visitDate" />
+    <result column="scheduling_type" jdbcType="CHAR" property="schedulingType" />
+    <result column="subsection_type" jdbcType="CHAR" property="subsectionType" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    reg_id, patient_id, patient_name, user_id, doctor_name, dept_id, reg_item_id, reg_item_amount, 
+    reg_number, reg_status, visit_date, scheduling_type, subsection_type, create_time, 
+    update_time, create_by
+  </sql>
+</mapper>

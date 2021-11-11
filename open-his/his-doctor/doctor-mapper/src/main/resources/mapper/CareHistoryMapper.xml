@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.twofish.mapper.CareHistoryMapper">
+  <resultMap id="BaseResultMap" type="com.twofish.domain.CareHistory">
+    <!--@mbg.generated-->
+    <!--@Table his_care_history-->
+    <id column="ch_id" jdbcType="VARCHAR" property="chId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="patient_id" jdbcType="VARCHAR" property="patientId" />
+    <result column="patient_name" jdbcType="VARCHAR" property="patientName" />
+    <result column="dept_id" jdbcType="BIGINT" property="deptId" />
+    <result column="dept_name" jdbcType="VARCHAR" property="deptName" />
+    <result column="receive_type" jdbcType="CHAR" property="receiveType" />
+    <result column="is_contagious" jdbcType="CHAR" property="isContagious" />
+    <result column="care_time" jdbcType="TIMESTAMP" property="careTime" />
+    <result column="case_date" jdbcType="VARCHAR" property="caseDate" />
+    <result column="reg_id" jdbcType="VARCHAR" property="regId" />
+    <result column="case_title" jdbcType="VARCHAR" property="caseTitle" />
+    <result column="case_result" jdbcType="VARCHAR" property="caseResult" />
+    <result column="doctor_tips" jdbcType="VARCHAR" property="doctorTips" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ch_id, user_id, user_name, patient_id, patient_name, dept_id, dept_name, receive_type, 
+    is_contagious, care_time, case_date, reg_id, case_title, case_result, doctor_tips, 
+    remark
+  </sql>
+</mapper>

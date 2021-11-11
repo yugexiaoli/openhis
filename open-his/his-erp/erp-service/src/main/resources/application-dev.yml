@@ -44,4 +44,9 @@ dubbo:
     timeout: 10000
   metadata-report:
     timeout: 10000
+  protocol:
+    port: -1   #随机端口
+    name: dubbo
+  scan:
+    base-packages: com.twofish.service.impl
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.twofish.mapper.PatientFileMapper">
+  <resultMap id="BaseResultMap" type="com.twofish.domain.PatientFile">
+    <!--@mbg.generated-->
+    <!--@Table his_patient_file-->
+    <id column="patient_id" jdbcType="VARCHAR" property="patientId" />
+    <result column="emergency_contact_name" jdbcType="VARCHAR" property="emergencyContactName" />
+    <result column="emergency_contact_phone" jdbcType="VARCHAR" property="emergencyContactPhone" />
+    <result column="emergency_contact_relation" jdbcType="VARCHAR" property="emergencyContactRelation" />
+    <result column="left_ear_hearing" jdbcType="VARCHAR" property="leftEarHearing" />
+    <result column="right_ear_hearing" jdbcType="VARCHAR" property="rightEarHearing" />
+    <result column="left_vision" jdbcType="DECIMAL" property="leftVision" />
+    <result column="right_vision" jdbcType="DECIMAL" property="rightVision" />
+    <result column="height" jdbcType="DECIMAL" property="height" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+    <result column="blood_type" jdbcType="VARCHAR" property="bloodType" />
+    <result column="personal_info" jdbcType="VARCHAR" property="personalInfo" />
+    <result column="family_info" jdbcType="VARCHAR" property="familyInfo" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    patient_id, emergency_contact_name, emergency_contact_phone, emergency_contact_relation, 
+    left_ear_hearing, right_ear_hearing, left_vision, right_vision, height, weight, blood_type, 
+    personal_info, family_info, create_time, update_time
+  </sql>
+</mapper>

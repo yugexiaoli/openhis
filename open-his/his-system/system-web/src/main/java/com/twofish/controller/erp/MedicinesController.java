@@ -132,4 +132,15 @@ public class MedicinesController  extends BaseController {
        return AjaxResult.toAjax(medicinesService.updateMedicinesStorage(medicinesId,medicinesStockNum));
     }
 
+    /**
+     * 根据药品名称模糊查询药品信息
+     *
+     */
+    @GetMapping("searchMedicinesByName/{search}")
+    @ApiOperation(value = "根据药品名称模糊查询药品信息",notes = "根据药品名称模糊查询药品信息")
+    @HystrixCommand
+    public AjaxResult searchMedicinesByName(@PathVariable String search){
+        return AjaxResult.success(this.medicinesService.queryMedicinesByName(search));
+    }
+
 }

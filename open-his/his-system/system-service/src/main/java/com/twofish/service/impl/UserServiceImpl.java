@@ -4,22 +4,19 @@ import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twofish.constants.Constants;
+import com.twofish.domain.User;
 import com.twofish.dto.UserDto;
 import com.twofish.mapper.RoleMapper;
+import com.twofish.mapper.UserMapper;
+import com.twofish.service.UserService;
 import com.twofish.utils.AppMd5Utils;
 import com.twofish.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.twofish.domain.User;
-import com.twofish.mapper.UserMapper;
-import com.twofish.service.UserService;
 @Service
 public class UserServiceImpl implements UserService{
     @Resource
@@ -144,6 +141,16 @@ public class UserServiceImpl implements UserService{
     @Override
     public List<User> getUsersNeedScheduling() {
         QueryWrapper<User> qw = new QueryWrapper<>();
+        qw.eq(User.COL_SCHEDULING_FLAG,Constants.SCHEDULING_FLAG_TRUE);
+        return this.userMapper.selectList(qw);
+    }
+
+    @Override
+    public List<User> queryUsersNeedScheduling(Long userId, Long deptId) {
+        QueryWrapper<User> qw=new QueryWrapper<>();
+        qw.eq(null!=userId,User.COL_USER_ID,userId);
+        qw.eq(null!=deptId,User.COL_DEPT_ID,deptId);
+        qw.eq(User.COL_STATUS,Constants.STATUS_TRUE);
         qw.eq(User.COL_SCHEDULING_FLAG,Constants.SCHEDULING_FLAG_TRUE);
         return this.userMapper.selectList(qw);
     }

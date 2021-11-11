@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.twofish.mapper.CareOrderMapper">
+  <resultMap id="BaseResultMap" type="com.twofish.domain.CareOrder">
+    <!--@mbg.generated-->
+    <!--@Table his_care_order-->
+    <id column="co_id" jdbcType="VARCHAR" property="coId" />
+    <result column="co_type" jdbcType="CHAR" property="coType" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="patient_id" jdbcType="VARCHAR" property="patientId" />
+    <result column="patient_name" jdbcType="VARCHAR" property="patientName" />
+    <result column="ch_id" jdbcType="VARCHAR" property="chId" />
+    <result column="all_amount" jdbcType="DECIMAL" property="allAmount" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_by" jdbcType="VARCHAR" property="updateBy" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    co_id, co_type, user_id, patient_id, patient_name, ch_id, all_amount, create_by, 
+    create_time, update_by, update_time
+  </sql>
+</mapper>

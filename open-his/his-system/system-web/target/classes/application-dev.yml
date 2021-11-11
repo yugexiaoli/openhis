@@ -83,13 +83,14 @@ dubbo:
     name: his-system-web-service
   registry:
     address: zookeeper://8.135.11.231:2181
-    timeout: 100000
+    timeout: 50000
   consumer:
     check: false
   config-center:
-    timeout: 10000
+    timeout: 50000
   metadata-report:
-    timeout: 10000
+    timeout: 50000
+
 
 #百度人脸识别
 baiduaip:

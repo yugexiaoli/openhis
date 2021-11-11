@@ -4,28 +4,50 @@
     <option name="projectProfile">
       <ProjectProfile>
         <option name="deleteByPrimayKeyEnabled" value="false" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
         <option name="insertMethodEnabled" value="false" />
         <option name="insertSelectiveMethodEnabled" value="false" />
         <option name="javaMapperPackage" value="com.twofish.mapper" />
-        <option name="javaMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-mapper\src\main\java" />
+        <option name="javaMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-mapper\src\main\java" />
         <option name="javaModelPackage" value="com.twofish.domain" />
-        <option name="javaModelPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-domain\src\main\java" />
-        <option name="lastDatabaseCrudChooseModuleName" value="his-erp" />
+        <option name="javaModelPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-domain\src\main\java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="doctor-domain" />
         <option name="lombokAllArgConstructor" value="true" />
         <option name="lombokDataAnnotation" value="true" />
         <option name="lombokNoArgsConstructor" value="true" />
         <option name="modelSuperClass" value="com.twofish.domain.BaseEntity" />
         <option name="moduleNameToPackageAndPathMap">
           <map>
+            <entry key="doctor-domain">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.twofish.mapper" />
+                  <option name="javaMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-mapper\src\main\java" />
+                  <option name="javaModelPacakge" value="com.twofish.domain" />
+                  <option name="javaModelPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-domain\src\main\java" />
+                  <option name="javaServiceInterfacePackage" value="com.twofish.service" />
+                  <option name="javaServiceInterfacePath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-api\src\main\java" />
+                  <option name="javaServicePackage" value="com.twofish.service.impl" />
+                  <option name="javaServicePath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-service\src\main\java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-mapper\src\main\resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
             <entry key="his-erp">
               <value>
                 <UserPackageAndPathInfoByModule>
                   <option name="javaMapperPackage" value="com.twofish.mapper" />
-                  <option name="javaMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-mapper\src\main\java" />
+                  <option name="javaMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-mapper\src\main\java" />
                   <option name="javaModelPacakge" value="com.twofish.domain" />
-                  <option name="javaModelPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-domain\src\main\java" />
+                  <option name="javaModelPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-domain\src\main\java" />
+                  <option name="javaServiceInterfacePackage" value="com.twofish.service" />
+                  <option name="javaServiceInterfacePath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-api\src\main\java" />
+                  <option name="javaServicePackage" value="com.twofish.service" />
+                  <option name="javaServicePath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-service\src\main\java" />
                   <option name="xmlPackage" value="mapper" />
-                  <option name="xmlPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-mapper\src\main\resources" />
+                  <option name="xmlPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -48,10 +70,127 @@
           </map>
         </option>
         <option name="p3CComment" value="true" />
-        <option name="removeTablePreName" value="stock_" />
+        <option name="removeTablePreName" value="his_" />
         <option name="selectByPrimaryKeyEnabled" value="false" />
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="openhis:his_care_history">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="CareHistory" />
+                  <option name="moduleName" value="doctor-domain" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:his_care_order">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="CareOrder" />
+                  <option name="moduleName" value="doctor-domain" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:his_care_order_item">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="CareOrderItem" />
+                  <option name="moduleName" value="doctor-domain" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:his_patient">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Patient" />
+                  <option name="moduleName" value="doctor-domain" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:his_patient_file">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="PatientFile" />
+                  <option name="moduleName" value="doctor-domain" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:his_registration">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Registration" />
+                  <option name="moduleName" value="doctor-domain" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="openhis:his_scheduling">
+              <value>
+                <TableGenerateConfig>
+                  <option name="deleteByPrimayKeyEnabled" value="false" />
+                  <option name="generatedKey" value="" />
+                  <option name="insertMethodEnabled" value="false" />
+                  <option name="insertSelectiveMethodEnabled" value="false" />
+                  <option name="javaModelName" value="Scheduling" />
+                  <option name="moduleName" value="his-erp" />
+                  <option name="selectByPrimaryKeyEnabled" value="false" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateByPrimaryKeySelectiveEnabled" value="false" />
+                  <option name="updateByPrimaykeyEnabled" value="false" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="openhis:stock_inventory_log">
               <value>
                 <TableGenerateConfig>
@@ -365,7 +504,7 @@
         <option name="useSwagger" value="true" />
         <option name="userMybatisPlus" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-erp\erp-mapper\src\main\resources" />
+        <option name="xmlMapperPath" value="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-mapper\src\main\resources" />
       </ProjectProfile>
     </option>
   </component>

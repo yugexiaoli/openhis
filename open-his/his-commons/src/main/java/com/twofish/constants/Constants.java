@@ -131,4 +131,17 @@ public interface Constants {
      * ID前缀
      */
     String ID_PROFIX_CG="CG";
+    String ID_PROFIX_HZ="HZ";
+    String ID_PROFIX_GH="GH";
+    String ID_PROFIX_CH ="CH" ;
+    String ID_PROFIX_CO_ID = "CO";
+    String ID_PROFIX_COI = "ITEM";
+    /**
+     * 排班时段
+     */
+    String subsection_type_morning="1";
+    String subsection_type_afternoon="2";
+    String subsection_type_evening="3";
+
+
 }

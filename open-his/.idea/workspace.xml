@@ -14,130 +14,639 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4cedbdc-7988-4eb5-be06-3652a390af02" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/InventoryLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/domain/InventoryLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/InventoryLogDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/PurchaseFormDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-domain/src/main/java/com/twofish/dto/PurchaseItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/java/com/twofish/mapper/InventoryLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-mapper/src/main/resources/mapper/InventoryLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/InventoryLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/InventoryLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/01-第九章-补充整理.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/02-第九章-阿里云部署.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/03-第九章-Yaip的搭建和使用.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/api.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/api.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/dashboard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/dubbo+zookeeper/dubbo-admin-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/dubbo+zookeeper/zookeeper-3.4.14.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/nginx/nginx-1.14.2.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/app.c10237f3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-052a0056.8b79ea20.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-05a99c67.b1dd7a76.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-076d521c.5c83702a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-0876c0b2.b6196c5f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-0c245cac.d77b408e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-1902944a.640e44dc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-1f26f98c.936f8ebe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-2ba9f81e.8b9f25cd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-3886abd3.1e1b2837.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-405a14db.e69a276e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-44e529cc.251fdb5c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-451e9cdc.7606f894.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-4c31d3d2.2bb254ba.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-4dd28fc8.02f29e6e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-53c81c80.a4fb595f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-5451e56c.c67a304e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-556562e8.13a7e89e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-88bd1d5a.dcc665da.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-919ff230.bca037a2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-9e5fc220.84f98409.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-a2cd6ed2.de0c4013.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-a815cf0c.0d2126a1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-ace8e3e6.d40b94e9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-bab5edb6.db14bc0c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-e008b004.2fe1df31.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/css/chunk-libs.3dfb7769.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/fonts/element-icons.535877f5.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/fonts/element-icons.732389de.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/401.089007e7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/404.a57b6f31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/404_cloud.0f4bc32b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/dashboard.b1fabce4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/tui-editor-2x.b4361244.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/img/tui-editor.30dd0f52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/app.a1b428c0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-01c0f366.234d180c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-052a0056.59331c1c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-05a99c67.b51e0843.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-076d521c.e9e84602.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-0876c0b2.d1c69763.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-0c245cac.1afcf67c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-105c5878.5ba9bd4f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-12577e7d.9f9265e8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-1902944a.02570eec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-1b14706b.1ecb4001.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-1f26f98c.073fce9c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-282440f1.719ec168.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2ba9f81e.fa1c0a07.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d0126c1.0c53b36b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d0b1626.b6717585.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d0cfb23.7d4e2a31.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d2105d3.b54ad484.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d2109c1.8edf7b15.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d21eb82.a21163f8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-2d230fe7.19def69d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3886abd3.e997035c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3b0424d2.b4b87d42.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3b69bc00.75d6c640.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-3caf3323.735ebb40.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-405a14db.471a4900.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-41b4d629.9b3b879d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-44e529cc.9e280aa5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-451e9cdc.a0267339.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-4c31d3d2.5b8b8dde.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-4dd28fc8.b9d0dbc9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-4eff967a.9f88217d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-53c81c80.b2a214c4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-5451e56c.52d42c9d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-556562e8.31a47902.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-5de4f646.163eda0e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-64c68d45.bef08aaa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-747632df.2f63e354.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-88bd1d5a.f2851263.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-919ff230.b0fed447.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-9e5fc220.fec6474a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-a2cd6ed2.be1ed9ee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-a815cf0c.a563902f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-ace8e3e6.70d801b9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-bab5edb6.7ce7fea6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-d19c1a98.71252001.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-e008b004.27d7fa76.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-ee7798a2.f97c94d6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-elementUI.eaba838c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/09-第九章-补充整理及最后部署/部署的所有资源/打包好的前端/his/static/js/chunk-libs.e5014b3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../课程和软件/nginx-1.14.2.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/erp/purchase/purchase.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/erp/purchase/purchase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/system/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/system/user/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/HisDataUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/twofish/service/CareHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/twofish/service/CareOrderItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/twofish/service/CareOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/twofish/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java/com/twofish/service/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/domain/CareHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/domain/CareOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/domain/CareOrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/domain/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/domain/Registration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/CareHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/CareOrderSaveDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/PatientDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/RegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/RegistrationFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/RegistrationQueryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/SchedulingFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/SchedulingQueryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-domain/src/main/java/com/twofish/dto/TableDateItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/twofish/mapper/CareHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/twofish/mapper/CareOrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/twofish/mapper/CareOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/twofish/mapper/PatientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/java/com/twofish/mapper/RegistrationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CareHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CareOrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/CareOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-mapper/src/main/resources/mapper/RegistrationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/twofish/service/impl/CareHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/twofish/service/impl/CareOrderItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/twofish/service/impl/CareOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/twofish/service/impl/PatientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/java/com/twofish/service/impl/RegistrationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/docter/CareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/docter/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/docter/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/docter/SchedulingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/01-第五章-看病就诊前后端开发【后端】.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/02-第五章-看病就诊前后端开发【前端】.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/~$-第五章-看病就诊前后端开发【前端】.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.env.staging" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/README.zh-CN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/mock-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/remote-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/role/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/role/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/mock/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/plopfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/docter/care.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/docter/patient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/docter/registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/docter/scheduling.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/erp/inventoryLog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/erp/medicines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/erp/producter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/erp/provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/erp/purchase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/qiniu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/remote-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/checkItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/dept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/dict/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/dict/type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/loginInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/operLog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/registeredItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/system/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/api/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/assets/401_images/401.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/assets/404_images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/assets/404_images/404_cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/assets/custom-theme/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/assets/custom-theme/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/assets/custom-theme/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/BackToTop/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Charts/Keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Charts/LineMarker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Charts/MixChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Charts/mixins/resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/DndList/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/DragSelect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Dropzone/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ErrorLog/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/GithubCorner/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Hamburger/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/HeaderSearch/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ImageCropper/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ImageCropper/utils/data2blob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ImageCropper/utils/effectRipple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ImageCropper/utils/language.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ImageCropper/utils/mimes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/JsonEditor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Kanban/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/MDinput/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/MarkdownEditor/default-options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/MarkdownEditor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Pagination/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/PanThumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/RightPanel/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Screenfull/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Share/DropdownMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/SizeSelect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Sticky/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/TextHoverEffect/Mallki.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/ThemePicker/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Tinymce/components/EditorImage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Tinymce/dynamicLoadScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Tinymce/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Tinymce/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Tinymce/toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Upload/SingleImage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Upload/SingleImage2.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/Upload/SingleImage3.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/components/UploadExcel/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/clipboard/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/clipboard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/el-drag-dialog/drag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/el-drag-dialog/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/el-table/adaptive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/el-table/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/permission/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/permission/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/waves/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/waves/waves.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/directive/waves/waves.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/filters/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/bug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/component.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/documentation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/drag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/education.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/example.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/excel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/exit-fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/eye-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/form.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/guide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/international.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/nested.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/pdf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/people.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/peoples.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/qq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/shopping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/size.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/skill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/theme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/tree-table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/wechat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svg/zip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/icons/svgo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/AppMain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Settings/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Sidebar/FixiOSBug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Sidebar/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Sidebar/Link.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Sidebar/Logo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/Sidebar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/TagsView/ScrollPane.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/TagsView/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/layout/mixin/ResizeHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/router/modules/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/router/modules/components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/router/modules/nested.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/router/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/errorLog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/tagsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/store/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/btn.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/element-ui.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/element-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/mixin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/error-log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/get-page-title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/his-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/open-window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/scroll-to.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/vendor/Export2Excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/vendor/Export2Zip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/charts/keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/charts/line.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/charts/mix-chart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/clipboard/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/avatar-upload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/back-to-top.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/count-to.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/dnd-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/drag-dialog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/drag-kanban.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/drag-select.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/dropzone.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/json-editor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/markdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/mixin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/split-pane.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/sticky.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/components-demo/tinymce.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/BarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/BoxCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/LineChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/PanelGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/PieChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/RaddarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/TodoList/Todo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/TodoList/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/TodoList/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/TransactionTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/components/mixins/resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/admin/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/editor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/dashboard/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/care/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/patient/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/registration/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/registration/list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/scheduling/index copy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/scheduling/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/doctor/scheduling/myscheduling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/inventoryLog/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/medicines/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/producter/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/provider/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/purchase/auditList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/purchase/editPurchase.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/purchase/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/erp/purchase/newPurchase.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/error-page/401.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/error-page/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/components/ArticleDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/components/Dropdown/Comment.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/components/Dropdown/Platform.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/components/Dropdown/SourceUrl.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/components/Dropdown/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/components/Warning.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/create.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/edit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/example/list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/components/AutoWidthOption.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/components/BookTypeOption.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/components/FilenameOption.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/export-excel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/merge-header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/select-excel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/excel/upload-excel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/guide/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/guide/steps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/icons/element-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/icons/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/icons/svg-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/login/auth-redirect.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/login/components/SocialSignin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/login/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/permission/components/SwitchRoles.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/permission/directive.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/permission/page.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/permission/role.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/redirect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/checkItem/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/dept/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/dict/data.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/dict/type.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/loginInfo/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/menu/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/notice/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/operLog/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/registeredItem/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/role/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/system/user/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/tab/components/TabPane.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/tab/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/table/complex-table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/table/drag-table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/table/dynamic-table/components/FixedThead.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/table/dynamic-table/components/UnfixedThead.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/table/dynamic-table/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/table/inline-edit-table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/theme/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/src/views/zip/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/components/Hamburger.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/components/SvgIcon.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/utils/formatTime.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/utils/param2Obj.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/utils/parseTime.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/tests/unit/utils/validate.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his-ui/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/aspectj/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/aspectj/enums/BusinessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/aspectj/enums/BusinessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/aspectj/enums/OperatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/constants/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/domain/SimpleUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/dto/BaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/dto/LoginBodyDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/utils/AddressUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/utils/AppMd5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/utils/HisDateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/utils/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/utils/IdGeneratorSnowflake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/utils/IpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/vo/AjaxResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/vo/DataGridView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-commons/src/main/java/com/bjsxt/vo/MenuTreeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-api/src/main/java/com/bjsxt/service/CareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-api/src/main/java/com/bjsxt/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-api/src/main/java/com/bjsxt/service/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-api/src/main/java/com/bjsxt/service/SchedulingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/CareHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/CareOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/CareOrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/PatientFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/Registration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/domain/Scheduling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/CareHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/CareOrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/CareOrderFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/CareOrderItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/PatientDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/RegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/RegistrationFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/RegistrationQueryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/SchedulingDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/SchedulingFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-domain/src/main/java/com/bjsxt/dto/SchedulingQueryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/CareHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/CareOrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/CareOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/PatientFileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/PatientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/RegistrationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/java/com/bjsxt/mapper/SchedulingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/CareHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/CareOrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/CareOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/PatientFileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/RegistrationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-mapper/src/main/resources/mapper/SchedulingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/java/com/bjsxt/DoctorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/java/com/bjsxt/service/impl/CareServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/java/com/bjsxt/service/impl/PatientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/java/com/bjsxt/service/impl/RegistrationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/java/com/bjsxt/service/impl/SchedulingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/resources/application-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/doctor-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-doctor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-api/src/main/java/com/bjsxt/service/InventoryLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-api/src/main/java/com/bjsxt/service/MedicinesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-api/src/main/java/com/bjsxt/service/ProducterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-api/src/main/java/com/bjsxt/service/ProviderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-api/src/main/java/com/bjsxt/service/PurchaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/domain/InventoryLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/domain/Medicines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/domain/Producter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/domain/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/domain/Purchase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/domain/PurchaseItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/InventoryLogDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/MedicinesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/ProducterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/ProviderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/PurchaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/PurchaseFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-domain/src/main/java/com/bjsxt/dto/PurchaseItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/java/com/bjsxt/mapper/InventoryLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/java/com/bjsxt/mapper/MedicinesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/java/com/bjsxt/mapper/ProducterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/java/com/bjsxt/mapper/ProviderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/java/com/bjsxt/mapper/PurchaseItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/java/com/bjsxt/mapper/PurchaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/resources/mapper/InventoryLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/resources/mapper/MedicinesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/resources/mapper/ProducterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/resources/mapper/ProviderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/resources/mapper/PurchaseItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-mapper/src/main/resources/mapper/PurchaseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/java/com/bjsxt/ErpApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/java/com/bjsxt/service/impl/InventoryLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/java/com/bjsxt/service/impl/MedicinesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/java/com/bjsxt/service/impl/ProducterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/java/com/bjsxt/service/impl/ProviderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/java/com/bjsxt/service/impl/PurchaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/resources/application-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/erp-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-erp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-service/src/main/java/com/bjsxt/StatisticsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-service/src/main/resources/application-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-statistics/statistics-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/CheckItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/DictDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/DictTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/LoginInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/OperLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/RegisteredItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-api/src/main/java/com/bjsxt/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/CheckItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/DictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/DictType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/LoginInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/OperLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/RegisteredItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/CheckItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/DeptDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/DictDataDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/DictTypeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/LoginInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/MenuDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/NoticeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/OperLogDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/RegisteredItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/RoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-domain/src/main/java/com/bjsxt/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/CheckItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/DictDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/DictTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/LoginInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/NoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/OperLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/RegisteredItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/java/com/bjsxt/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/CheckItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/DictDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/DictTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/LoginInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/NoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/OperLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/RegisteredItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-mapper/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/CheckItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/DictDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/DictTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/LoginInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/NoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/OperLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/RegisteredItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-service/src/main/java/com/bjsxt/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/SystemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/aspectj/OperLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/config/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/config/shiro/ShiroAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/config/shiro/ShiroLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/config/shiro/ShiroProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/config/shiro/TokenWebSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/config/shiro/UserRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/doctor/CareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/doctor/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/doctor/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/doctor/SchedulingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/erp/InventoryLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/erp/MedicinesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/erp/ProducterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/erp/ProviderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/erp/PurchaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/CheckItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/DictDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/DictTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/LoginInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/OperLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/RegistredItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/controller/system/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/utils/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/utils/ShiroSecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/java/com/bjsxt/vo/ActiverUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/resources/application-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/his-system/system-web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../课程和软件/05-第五章-看病就诊前后端开发/阶段代码/open-his/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/api/erp/medicines/medicines.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/api/erp/medicines/medicines.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/medicines/medicines.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/medicines/medicines.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/pending.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/pending.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/purchase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/erp/purchase/purchase.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/system/user/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/system/user/user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/utils/his-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/utils/his-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../open-his-ui/src/views/doctor/scheduling/scheduling.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../open-his-ui/src/views/doctor/scheduling/scheduling.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/config/mybatisplus/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/config/mybatisplus/MyMetaObjectHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/IdGeneratorSnowflake.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/src/main/java/com/twofish/utils/IdGeneratorSnowflake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/config/mybatisplus/MyMetaObjectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/config/mybatisplus/MyMetaObjectHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/constants/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/constants/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/utils/IdGeneratorSnowflake.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-commons/target/classes/com/twofish/utils/IdGeneratorSnowflake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/PurchaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/twofish/service/PurchaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/twofish/service/PurchaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/PurchaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/PurchaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/PurchaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/PurchaseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/PurchaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/PurchaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/doctor-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-doctor/doctor-service/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-doctor/doctor-service/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/MedicinesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/src/main/java/com/twofish/service/MedicinesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/twofish/service/MedicinesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-api/target/classes/com/twofish/service/MedicinesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/MedicinesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/java/com/twofish/service/impl/MedicinesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/META-INF/erp-service.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/MedicinesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-erp/erp-service/target/classes/com/twofish/service/impl/MedicinesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-statistics/statistics-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-statistics/statistics-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-statistics/statistics-service/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-statistics/statistics-service/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/src/main/java/com/twofish/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/DeptService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-api/target/classes/com/twofish/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/src/main/java/com/twofish/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/DeptServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-service/target/classes/com/twofish/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/MedicinesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/erp/MedicinesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/java/com/twofish/controller/system/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/META-INF/system-web.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/MedicinesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/erp/MedicinesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/his-system/system-web/target/classes/com/twofish/controller/system/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,26 +700,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/IDEA项目/springcloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/his-doctor/doctor-api/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.ccnode.codegenerator.ab.e" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-doctor\doctor-mapper\src\main\resources\mapper" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.twofish.controller.erp" />
+      <recent name="com.twofish.controller.docter" />
       <recent name="com.twofish.dto" />
+      <recent name="com.twofish.controller.erp" />
       <recent name="com.twofish.domain" />
       <recent name="com.twofish.generator" />
-      <recent name="com.twofish.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\360MoveData\Users\john\Desktop\open_his\open-his\his-commons\src\main\java\com\twofish\config" />
@@ -303,10 +816,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SystemApplication" />
-        <item itemvalue="Spring Boot.ErpApplication" />
-        <item itemvalue="Application.IdGeneratorSnowflake" />
-        <item itemvalue="Spring Boot.StatisticsApplication" />
         <item itemvalue="Spring Boot.DoctorApplication" />
+        <item itemvalue="Spring Boot.ErpApplication" />
+        <item itemvalue="Spring Boot.StatisticsApplication" />
+        <item itemvalue="Application.IdGeneratorSnowflake" />
       </list>
     </recent_temporary>
   </component>
@@ -369,6 +882,23 @@
       <workItem from="1607438160410" duration="262000" />
       <workItem from="1608832845582" duration="1483000" />
       <workItem from="1608900918627" duration="20000" />
+      <workItem from="1608914773469" duration="631000" />
+      <workItem from="1609183469478" duration="532000" />
+      <workItem from="1610159484455" duration="708000" />
+      <workItem from="1610228155306" duration="676000" />
+      <workItem from="1610862130330" duration="2315000" />
+      <workItem from="1610931588477" duration="50000" />
+      <workItem from="1611109044909" duration="19945000" />
+      <workItem from="1611194107752" duration="9076000" />
+      <workItem from="1611912811770" duration="1083000" />
+      <workItem from="1615028893064" duration="8266000" />
+      <workItem from="1615293519461" duration="7706000" />
+      <workItem from="1616319102867" duration="23000" />
+      <workItem from="1634626744209" duration="49124000" />
+      <workItem from="1635255608231" duration="3104000" />
+      <workItem from="1635259290997" duration="29250000" />
+      <workItem from="1635615053527" duration="32868000" />
+      <workItem from="1636462611926" duration="18128000" />
     </task>
     <task id="LOCAL-00001" summary="server second commit&#10;ccy&#10;2020/0/31">
       <created>1604078368190</created>
@@ -441,142 +971,74 @@
     <option name="LAST_COMMIT_MESSAGE" value="字典类型管理模块提交 ccy 2020/0/31" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="625" y="132" key="#Project_Structure" timestamp="1605616797751">
+    <state x="422" y="142" key="#Project_Structure" timestamp="1636526419310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="625" y="132" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1605616797751" />
-    <state x="528" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604174374148">
+    <state x="422" y="142" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1636526419310" />
+    <state x="1063" y="359" key="#com.intellij.ide.util.MemberChooser" timestamp="1636560681801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="528" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604174374148" />
-    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser" timestamp="1607394757083">
+    <state x="1063" y="359" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636560681801" />
+    <state width="1372" height="216" key="GridCell.Tab.0.bottom" timestamp="1636562357503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="880" y="267" width="740" height="601" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607394757083" />
-    <state x="909" y="386" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603834588065">
+    <state width="1372" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357503" />
+    <state width="1372" height="216" key="GridCell.Tab.0.center" timestamp="1636562357503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="909" y="386" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603834588065" />
-    <state x="900" y="324" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603834644673">
+    <state width="1372" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357503" />
+    <state width="1372" height="216" key="GridCell.Tab.0.left" timestamp="1636562357500">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="900" y="324" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603834644673" />
-    <state x="872" y="555" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605795006702">
+    <state width="1372" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357500" />
+    <state width="1372" height="216" key="GridCell.Tab.0.right" timestamp="1636562357503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="872" y="555" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605795006702" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605626647110">
+    <state width="1372" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357503" />
+    <state width="1372" height="216" key="GridCell.Tab.1.bottom" timestamp="1636562357510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605626647110" />
-    <state x="1295" y="382" key="#xdebugger.evaluate" timestamp="1604536089734">
+    <state width="1372" height="216" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357510" />
+    <state width="1372" height="216" key="GridCell.Tab.1.center" timestamp="1636562357504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1295" y="382" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1604536089734" />
-    <state x="490" y="98" width="1164" height="942" key="CommitChangelistDialog2" timestamp="1604178983853">
+    <state width="1372" height="216" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357504" />
+    <state width="1372" height="216" key="GridCell.Tab.1.left" timestamp="1636562357503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="98" width="1164" height="942" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604178983853" />
-    <state x="134" y="134" key="DiffContextDialog" timestamp="1604100512651">
+    <state width="1372" height="216" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357503" />
+    <state width="1372" height="216" key="GridCell.Tab.1.right" timestamp="1636562357504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="134" y="134" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604100512651" />
-    <state x="906" y="299" key="FileChooserDialogImpl" timestamp="1608900939056">
+    <state width="1372" height="216" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636562357504" />
+    <state width="1372" height="598" key="GridCell.Tab.2.bottom" timestamp="1636522293788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="906" y="299" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608900939056" />
-    <state width="1466" height="220" key="GridCell.Tab.0.bottom" timestamp="1608890946800">
+    <state width="1372" height="598" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636522293788" />
+    <state width="1372" height="598" key="GridCell.Tab.2.center" timestamp="1636522293788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1466" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.0.center" timestamp="1608890946800">
+    <state width="1372" height="598" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636522293788" />
+    <state width="1372" height="598" key="GridCell.Tab.2.left" timestamp="1636522293788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1466" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.0.left" timestamp="1608890946800">
+    <state width="1372" height="598" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636522293788" />
+    <state width="1372" height="598" key="GridCell.Tab.2.right" timestamp="1636522293788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1466" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.0.right" timestamp="1608890946800">
+    <state width="1372" height="598" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636522293788" />
+    <state x="550" y="180" key="SettingsEditor" timestamp="1634914713202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1466" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.1.bottom" timestamp="1608890946800">
+    <state x="550" y="180" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1634914713202" />
+    <state x="632" y="238" key="run.anything.popup" timestamp="1636560760812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1466" height="220" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.1.center" timestamp="1608890946800">
+    <state x="632" y="238" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636560760812" />
+    <state x="902" y="349" width="672" height="678" key="search.everywhere.popup" timestamp="1636560355938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1466" height="220" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.1.left" timestamp="1608890946800">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1466" height="220" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1466" height="220" key="GridCell.Tab.1.right" timestamp="1608890946800">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1466" height="220" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608890946800" />
-    <state width="1614" height="278" key="GridCell.Tab.2.bottom" timestamp="1606286479460">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1614" height="278" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606286479460" />
-    <state width="1614" height="278" key="GridCell.Tab.2.center" timestamp="1606286479460">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1614" height="278" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606286479460" />
-    <state width="1614" height="278" key="GridCell.Tab.2.left" timestamp="1606286479460">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1614" height="278" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606286479460" />
-    <state width="1614" height="278" key="GridCell.Tab.2.right" timestamp="1606286479460">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1614" height="278" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606286479460" />
-    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1605637910872">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1605637910872" />
-    <state x="61" y="209" width="1658" height="691" key="Maven.ArtifactSearchDialog" timestamp="1606236344826">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="61" y="209" width="1658" height="691" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606236344826" />
-    <state x="747" y="328" key="SettingsEditor" timestamp="1605930068016">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="747" y="328" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605930068016" />
-    <state width="807" height="517" key="XDebugger.FullValuePopup" timestamp="1604534805891">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="807" height="517" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1604534805891" />
-    <state x="93" y="156" width="1720" height="809" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1605617387877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="93" y="156" width="1720" height="809" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605617387877" />
-    <state x="93" y="156" width="1720" height="809" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605617387877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="93" y="156" width="1720" height="809" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605617387877" />
-    <state x="896" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604154896165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="896" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604154896165" />
-    <state x="1023" y="530" key="extract.method.dialog" timestamp="1605312514980">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1023" y="530" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605312514980" />
-    <state x="731" y="202" width="1100" height="692" key="new project wizard" timestamp="1607438433857">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="731" y="202" width="1100" height="692" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607438433857" />
-    <state x="1038" y="247" key="run.anything.popup" timestamp="1605815960355">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1038" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605815960355" />
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1606232422974">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="910" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606232422974" />
+    <state x="902" y="349" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636560355938" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

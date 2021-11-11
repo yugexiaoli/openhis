@@ -3,7 +3,7 @@ spring:
   #数据源的配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/openhis?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/openhis?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
     password: 123456
     #注入数据源的类型   默认的为HikariDataSource
@@ -36,9 +36,17 @@ dubbo:
   application:
     name: his-doctor-service
   registry:
-    address: zookeeper://8.129.120.248:2181
+    address: zookeeper://8.135.11.231:2181
+    timeout: 100000
   consumer:
     check: false
   config-center:
-    timeout: 10000
+    timeout: 50000
+  metadata-report:
+    timeout: 50000
+  protocol:
+    port: -1   #随机端口
+    name: dubbo
+  scan:
+    base-packages: com.twofish.service.impl
 

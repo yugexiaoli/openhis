@@ -13,7 +13,7 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
-
+import moment from 'moment'
 import './icons' // icon
 import './permission' // permission control
 import './utils/error-log' // error log
@@ -26,7 +26,7 @@ import 'codemirror/lib/codemirror.css'
 Vue.use(VueCodeMirror)
 
 // 引入自定义的
-import { resetForm, addDateRange, selectDictLabel, handleTree, selectDeptLabel, selectProducterLabel, selectProviderLabel } from '@/utils/his-utils'
+import { resetForm, addDateRange, selectDictLabel, handleTree, selectDeptLabel, selectProducterLabel, getCurrentTimeType, selectProviderLabel, getAge } from '@/utils/his-utils'
 import { getDataByType } from '@/api/system/dict/data'
 // 全局方法挂载
 Vue.prototype.resetForm = resetForm
@@ -37,6 +37,9 @@ Vue.prototype.getDataByType = getDataByType // 加载全局的根据字典类型
 Vue.prototype.handleTree = handleTree // 构造树
 Vue.prototype.selectProducterLabel = selectProducterLabel
 Vue.prototype.selectProviderLabel = selectProviderLabel
+Vue.prototype.getAge = getAge // 全局根据生日计算年龄
+Vue.prototype.getCurrentTimeType = getCurrentTimeType // 全局计算当前时间类型上午下午晚上
+Vue.prototype.moment = moment // 时间处理工具
 // 挂载全局消息框
 Vue.prototype.msgSuccess = function(msg) {
   this.$message({ showClose: true, message: msg, type: 'success' })

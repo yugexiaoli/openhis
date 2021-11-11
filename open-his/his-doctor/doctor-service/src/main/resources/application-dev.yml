@@ -41,7 +41,12 @@ dubbo:
   consumer:
     check: false
   config-center:
-    timeout: 10000
+    timeout: 50000
   metadata-report:
-    timeout: 10000
+    timeout: 50000
+  protocol:
+    port: -1   #随机端口
+    name: dubbo
+  scan:
+    base-packages: com.twofish.service.impl
 

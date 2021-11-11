@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.SchedulingMapper">
+    <resultMap id="BaseResultMap" type="com.bjsxt.domain.Scheduling">
+        <!--@mbg.generated-->
+        <!--@Table his_scheduling-->
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="dept_id" jdbcType="INTEGER" property="deptId"/>
+        <result column="scheduling_day" jdbcType="VARCHAR" property="schedulingDay"/>
+        <result column="subsection_type" jdbcType="CHAR" property="subsectionType"/>
+        <result column="scheduling_type" jdbcType="CHAR" property="schedulingType"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        user_id, dept_id, scheduling_day, subsection_type, scheduling_type, create_time,
+        create_by
+    </sql>
+    <select id="queryHasSchedulingDeptIds" resultType="java.lang.Long">
+    select dept_id from his_scheduling
+        <where>
+            <if test="deptId != null">
+                 dept_id=#{deptId}
+            </if>
+            <if test="schedulingDay != null">
+                and scheduling_day=#{schedulingDay}
+            </if>
+            <if test="schedulingType != null">
+              and scheduling_type=#{schedulingType}
+            </if>
+            <if test="subsectionType != null">
+              and subsection_type=#{subsectionType}
+            </if>
+        </where>
+    </select>
+</mapper>
